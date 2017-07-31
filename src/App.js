@@ -6,6 +6,7 @@ import { BrowserRouter as Router,
 } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
+import Landing from './components/Landing';
 
 const Footer = styled.div`
   text-align: center;
@@ -31,6 +32,7 @@ class App extends Component {
           <main>
             {Routes}
           </main>
+          <Landing/>
           <Footer>
             &copy; NickyEvers 2017
           </Footer>
