@@ -1,2 +1,2 @@
 # portfolio
-Personal website
+Recently started personal website build in ReactJS
