@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router,
-         Route,
-         Switch,
-         Redirect
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
 } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
+import Nav from './components/Nav';
 import Landing from './components/Landing';
 
 const Footer = styled.div`
@@ -27,15 +29,19 @@ const Routes = (
 class App extends Component {
   render() {
     return (
-        <Router>
-        <div>
-          <main>
-            {Routes}
+      <Router>
+        <div className="App">
+          <Nav/>
+          <Footer/>
+          <main id='page-wrap'>
+            <Switch>
+              <Route exact path='/' render={() => <Landing />} />
+              {/* <Route path='/about' render={() => <About />} />
+              <Route path='/places' render={() => <Main />} />
+              <Route path='/vendors' render={() => <Vendors/>} /> */}
+              <Redirect to='/' />
+            </Switch>
           </main>
-          <Landing/>
-          <Footer>
-            &copy; NickyEvers 2017
-          </Footer>
         </div>
       </Router>
     );

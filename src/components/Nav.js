@@ -1,24 +1,40 @@
-import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import Headroom from 'react-headroom';
+import React, { Component } from 'react';
+import { push as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Header = styled.div`
+const NavItem = styled.li`
   font-size: 2em;
-  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: turquoise;
+  }
+
+  @media (min-width: 700px) {
+    display: inline-block;
+  }
 `;
 
-function Nav() {
-  return (
-    <Headroom >
-      <div>
-        <Header>
-          <h1>Nicky Evers</h1>
-          <h3></h3>
-        </Header>
+class Nav extends Component {
+  showSettings(event) {
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <div id='outer-container'>
+        <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
+          <Link to ='/'><NavItem>Home</NavItem></Link>
+          <Link to ='/about'><NavItem>About</NavItem></Link>
+          <Link to ='/projects'><NavItem>Projects</NavItem></Link>
+          <Link to ='/contact'><NavItem>Contact</NavItem></Link>
+        </Menu>
       </div>
-    </Headroom>
-  );
+    );
+  }
 }
 
 export default Nav;
