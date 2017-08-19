@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
-import Nav from './components/Nav';
 import Landing from './components/Landing';
 
 const Footer = styled.div`
@@ -17,23 +16,11 @@ const Footer = styled.div`
   min-height: 1%;
 `;
 
-const Routes = (
-  <Switch>
-    {/* <Route exact path="/feed" render={() => <Feed />} />
-    <Route exact path="/" render={() => <Login />} />
-    <Route path="/AddPic" render={() => <AddPic />} /> */}
-    <Redirect to="/" />
-  </Switch>
-);
-
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <Nav/>
-          <Footer/>
-          <main id='page-wrap'>
             <Switch>
               <Route exact path='/' render={() => <Landing />} />
               {/* <Route path='/about' render={() => <About />} />
@@ -41,7 +28,6 @@ class App extends Component {
               <Route path='/vendors' render={() => <Vendors/>} /> */}
               <Redirect to='/' />
             </Switch>
-          </main>
         </div>
       </Router>
     );
