@@ -1,2 +1,5 @@
-# portfolio
-Recently started personal website build in ReactJS
+# About
+Work in progress;
+
+Recently started personal website built in React.js
+
