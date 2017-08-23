@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import About from './About';
 import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
 import backgroundImg from '../assets/img/tetsu2.png';
 
@@ -54,6 +55,7 @@ function Landing() {
           }}/>
         </a>
       </Background>
+      <About/>>
     </Wrapper>
   );
 }
