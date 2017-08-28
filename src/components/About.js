@@ -21,7 +21,6 @@ function About() {
           <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan. 
           </SubCopy>
           <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently looking for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
-          <SubCopy>Interested in hiring me? <a href=''>Send me a message</a> to talk about how I can help.</SubCopy>
         </CopyWrapper>
       </Text>
     </Wrapper >

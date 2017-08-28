@@ -34,7 +34,7 @@ const SubHeader = styled.h3`
 `;
 
 const ImgWrapper = styled.div`
-  width: 550px;
+  width: 400px;
 `;
 
 const CopyWrapper = styled.div`
