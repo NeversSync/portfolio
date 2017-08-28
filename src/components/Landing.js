@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import About from './About';
+import Scrollchor from 'react-scrollchor';
 import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
 import { Wrapper, Background, Header, SubTitle, Title } from './styles/Landing.style';
 
@@ -12,16 +11,17 @@ function Landing() {
           <SubTitle>Web Developer</SubTitle>
           <Title>Nicky Evers</Title>
         </Header>
-        <a href='' style={{
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
+        <Scrollchor to="#about" animate={{duration: 900}} 
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}>
           <ArrowIcon style={{ 
             color: 'white',
             width: 100, 
             height: 100
           }}/>
-        </a>
+        </Scrollchor>
       </Background>
     </Wrapper>
   );
