@@ -6,8 +6,8 @@ function About() {
   return (
     <Wrapper>
       <HeaderWrapper>
-        <Header>Nicky Evers</Header>
-        <SubHeader>Software developer, tea lover, and tech enthusiast</SubHeader>
+        <Header>Hi, I'm Nicky.</Header>
+        <SubHeader>I'm a Full-Stack web developer and I'm ready to work.</SubHeader>
       </HeaderWrapper>
       <Text>
         <ImgWrapper>
@@ -17,11 +17,11 @@ function About() {
           }}src={profileImg} alt=''/>  
         </ImgWrapper>
         <CopyWrapper>
-          <Copy>Hi, I'm Nicky Evers, welcome to my website.</Copy> 
-          <SubCopy>I'm a Full-Stack web developer with a successful track record of transforming conceptual ideas into fully functional applications. I'm currently working as a freelancer and looking for full-time employment while residing in Portland, Oregon.</SubCopy>
-          <SubCopy>My passion for learning combined with my love for elegant problem solving has been a tremendous driving force for me in everything I do.
+          <Copy>Hi, I'm Nicky.</Copy> 
+          <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan. 
           </SubCopy>
-          <SubCopy>Want to hire me? I'd love to talk to you to find out how I can help.</SubCopy>
+          <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently looking for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
+          <SubCopy>Interested in hiring me? <a href=''>Send me a message</a> to talk about how I can help.</SubCopy>
         </CopyWrapper>
       </Text>
     </Wrapper >
