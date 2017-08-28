@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
-import Landing from './components/Landing';
+import Main from './components/Main';
 
 const Footer = styled.div`
   text-align: center;
@@ -22,7 +22,7 @@ class App extends Component {
       <Router>
         <div className="App">
             <Switch>
-              <Route exact path='/' render={() => <Landing />} />
+              <Route exact path='/' render={() => <Main />} />
               {/* <Route path='/about' render={() => <About />} />
               <Route path='/places' render={() => <Main />} />
               <Route path='/vendors' render={() => <Vendors/>} /> */}
