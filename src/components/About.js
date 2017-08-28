@@ -1,53 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
 import profileImg from '../assets/img/profile-img.jpg';
-
-const Wrapper = styled.div`
-  color: black;
-  font-family: 'Raleway', sans-serif;
-  height: 400px;
-`;
-
-const Text = styled.div`
-  float: right;  
-  width: 40%
-`;
-
-const Header = styled.h2`
-  font-size: 1.75em;
-  font-weight: 300;
-`;
-
-const SubHeader = styled.h3`
-  font-size: 1.15em;
-`;
-
-const Copy = styled.p`
-  font-size: .75em;
-`;
-
-const Image = styled.div`
-margin: 10%;
-  width: 30%;
-  height: 600px;
-  float: left;
-  background: url(${profileImg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; 
-`;
+import { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, Copy, SubCopy} from './styles/About.style'; 
 
 function About() {
   return (
     <Wrapper>
-      <Image/>
-      <Text>
+      <HeaderWrapper>
         <Header>Nicky Evers</Header>
-        <SubHeader>Software developer, tea lover, learning enthusiast</SubHeader>
-        <Copy>Hi there, my name is Nicky and thanks for checking out my site!</Copy>
-        <Copy>I'm a full stack software developer with a successful track record of bringing conceptual ideas to fully functional applications. I'm currently working as a freelancer, looking for full-time employment and residing in Portland, Oregon.</Copy>
-        <Copy>Want to hire me? I'd love to talk to you to find out how I can help.</Copy>
-        <Copy>My passion for building things combined with my enthusiasm for technology has since been a tremendous driving force for me. I've worked on countless projects ranging from web development to mobile apps for both Android and iOS.</Copy>
+        <SubHeader>Software developer, tea lover, and tech enthusiast</SubHeader>
+      </HeaderWrapper>
+      <Text>
+        <ImgWrapper>
+          <img style={{
+            width: '100%',
+            boxShadow: '0 0 5px 0 rgba(0,0,0,.5)'
+          }}src={profileImg} alt=''/>  
+        </ImgWrapper>
+        <CopyWrapper>
+          <Copy>Hi, I'm Nicky Evers, welcome to my website.</Copy> 
+          <SubCopy>I'm a Full-Stack web developer with a successful track record of transforming conceptual ideas into fully functional applications. I'm currently working as a freelancer and looking for full-time employment while residing in Portland, Oregon.</SubCopy>
+          <SubCopy>My passion for learning combined with my love for elegant problem solving has been a tremendous driving force for me in everything I do.
+          </SubCopy>
+          <SubCopy>Want to hire me? I'd love to talk to you to find out how I can help.</SubCopy>
+        </CopyWrapper>
       </Text>
     </Wrapper >
   );
