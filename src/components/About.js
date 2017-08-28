@@ -4,7 +4,7 @@ import { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrappe
 
 function About() {
   return (
-    <Wrapper>
+    <Wrapper id='about'>
       <HeaderWrapper>
         <Header>Hi, I'm Nicky.</Header>
         <SubHeader>I'm a Full-Stack web developer and I'm ready to work.</SubHeader>

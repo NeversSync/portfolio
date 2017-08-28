@@ -1,17 +1,21 @@
 import React from 'react';
 import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
 import styled from 'styled-components';
-
-const Wrapper = styled.div`
-  background-color: turquoise;
-  text-align: center;
-`;
+import RaisedButton from 'material-ui/RaisedButton';
+import ResumeIcon from 'react-material-icons/icons/action/description';
+import { Wrapper, Copy } from './styles/Footer.style';
 
 function Footer() {
   return (
     <Wrapper>
-      <button href={resumeLink}>Resume</button>
-      <p>&copy; Nicky Evers 2017</p>
+      <RaisedButton 
+        label='Resume' 
+        href={resumeLink} 
+        target='_blank'
+        style={{margin: '20px', textTransform: 'lowercase'}}
+        icon={<ResumeIcon/>}
+      />
+      <Copy>&copy; Nicky Evers 2017</Copy>
     </Wrapper>
   );
 }
