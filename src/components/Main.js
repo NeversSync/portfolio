@@ -2,6 +2,7 @@ import React from 'react';
 import Landing from './Landing';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Landing/>
       <About/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
