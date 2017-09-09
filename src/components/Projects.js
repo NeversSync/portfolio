@@ -23,6 +23,12 @@ const Project = styled.div`
   height: 300px;
 `;
 
+const Tableau = Project.extend`
+  &:hover {
+    
+  }
+`;
+// TODO: Figure out overlay on hover for each project, possibly by having conditional rending in state or?
 const Header = styled.h2`
 display: block;
 width: 300px;
@@ -46,11 +52,11 @@ width: 400px;
 function Projects() {
   return (
     <Wrapper>
-      <Project>
+      <Tableau>
         <Header>Tableau</Header>
         <SubHeader>React.js/Redux, Node.js, Express.js, AWS S3, <br/>MongoDB, Mongoose, Heroku, Mlab</SubHeader>
         <ImgWrapper><img style={{ width: '100%', height: '100%'}}src={tableauImg} alt=''/></ImgWrapper>
-      </Project>
+      </Tableau>
       <Project>
         Gong Fu Tea
       </Project>
