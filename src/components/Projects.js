@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-// import tableauImg from '../assets/tableau-screen-shot.png';
-import tableauImg from '../assets/landing-page-tableau.png';
+import tableauImg from '../assets/img/landing-page-tableau.png';
+import gongFuImg from '../assets/img/gong-fu-tea-screenshot.png';
+import keyDownImg from '../assets/img/keydown-screenshot.png';
 
 const Wrapper = styled.div`
   margin: 30px 0 0 0;
@@ -49,6 +50,12 @@ const ImgWrapper = styled.div`
 width: 400px;
 `;
 
+
+// TODO:
+// add github button link to each project
+// Add hover function for projects
+// fix spacing of projects
+
 function Projects() {
   return (
     <Wrapper>
@@ -58,23 +65,21 @@ function Projects() {
         <ImgWrapper><img style={{ width: '100%', height: '100%'}}src={tableauImg} alt=''/></ImgWrapper>
       </Tableau>
       <Project>
-        Gong Fu Tea
+        <Header>Gong Fu Tea</Header>
+        <SubHeader>Mobile-first, Node.js, Express.js, Google Maps API, <br/> PostgreSQL, MongoDB, Mongoose, TDD, Jquery, Heroku</SubHeader>
+        <ImgWrapper><img style={{ width: '100%', height: '100%'}}src={gongFuImg} alt=''/></ImgWrapper>
       </Project>
       <Project>
-        Projects
+        <Header>KeyDown</Header>
+        <SubHeader>Vanilla Javascript, HTML 5, CSS</SubHeader>
+        <ImgWrapper><img style={{ width: '100%', height: '100%'}}src={keyDownImg} alt=''/></ImgWrapper>
       </Project>
       <Project>
-        Projects
+      <Header>React Image Gallery</Header>
+        <SubHeader>React.js/Redux, Node.js, Express.js, MongoDB,<br/> Mongoose, Heroku, Mlab</SubHeader>
+        <ImgWrapper><img style={{ width: '100%', height: '100%'}}src={keyDownImg} alt=''/></ImgWrapper>
       </Project>
     </Wrapper>
   );
 }
 export default Projects;
-
-// Tableau     -    https://the-tableau-app.herokuapp.com
-// •         Instagram   clone   built   over   4   days
-// -   Technical   stack:   React.js/Redux,   Node.js,   Express.js,   AWS,   S3,   MongoDB,   Mongoose,   Styled   Components,   Material   UI,             Heroku,   Mlab
-// GongFuTea    -      http://gongfutea.org
-// •          Open   source   project   providing   an   interactive   map   and   user-curated   database   for   lovers   of   Chinese   tea   preparation
-// -   Technical   stack:   Mobile-first,   Javascript,   Node.js,   Express.js,   Google   Maps   API,   PostgreSQL,   TDD,   MVC,   Jquery,
-//          Heroku,   HerokuDB
