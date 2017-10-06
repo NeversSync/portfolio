@@ -10,8 +10,8 @@ function Main() {
     <div>
       <Landing/>
       <About/>
-      <Contact/>
       <Projects/>
+      <Contact/>
       <Footer/>
     </div>
   );

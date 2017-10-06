@@ -5,7 +5,7 @@ width: 100%;
 font-family: 'Raleway', sans-serif;
 background-color: hsla(0, 0%, 55%, 0.40); 
 color: white;
-height: 220px;
+height: 190px;
 display: flex;
 justify-content: center;
 align-items: center;
