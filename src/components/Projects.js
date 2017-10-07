@@ -19,10 +19,10 @@ const Title = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
+  height: 140px;
   font-size: 2em;
   color: white;
-  background-color: hsla(187, 71%, 41%, 0.79);
+  background-color: hsla(187, 65%, 40%, .75);
 `;
 
 const Project = styled.div`
@@ -31,16 +31,15 @@ const Project = styled.div`
   justify-content: space-evenly;
   align-content: space-evenly;
   width: 40%;
-  height: 300px;
+  height: 350px;
   margin: 10px;
+    &:hover {
+      margin: 12px;
+      background-color: hsla(187, 90%, 40%, .25);
+      cursor: pointer;
+    }
 `;
 
-const Tableau = Project.extend`
-  &:hover {
-    
-  }
-`;
-// TODO: Figure out overlay on hover for each project, possibly by having conditional rending in state or?
 const Header = styled.h2`
 display: block;
 width: 300px;
@@ -67,19 +66,17 @@ box-shadow: .5px .5px 8px .2px grey;
 
 // TODO:
 // add github button link to each project
-// Add hover function for projects
-// fix spacing of projects
 
 function Projects() {
   return (
     <div>
       <Title><h2>Projects</h2></Title>
       <Wrapper>
-        <Tableau>
+        <Project>
           <Header>Tableau</Header>
           <SubHeader>React.js/Redux, Node.js, Express.js, AWS S3, <br/>MongoDB, Mongoose, Heroku, Mlab</SubHeader>
           <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={tableauImg} alt=''/></ImgWrapper>
-        </Tableau>
+        </Project>
         <Project>
           <Header>Gong Fu Tea</Header>
           <SubHeader>Mobile-first, Node.js, Express.js, Google Maps API, <br/> PostgreSQL, MongoDB, Mongoose, TDD, Jquery, Heroku</SubHeader>

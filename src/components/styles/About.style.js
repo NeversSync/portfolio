@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   color: black;
   font-family: 'Raleway', sans-serif;
-  height: 400px;
+  height: 375px;
   margin: 50px;
-  margin-top: 30px;
+  margin-top: 70px;
   letter-spacing: .2px;
   line-height: 1.7;
 `;
