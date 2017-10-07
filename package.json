@@ -27,5 +27,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d docs"
   },
-  "homepage": "https://neverssync.github.io/portfolio"
+  "homepage": "https://neverssync.github.io/portfolio/"
 }

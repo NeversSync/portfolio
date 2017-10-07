@@ -4,7 +4,7 @@ import tableauImg from '../assets/img/tableau-screen-shot.png';
 import gongFuImg from '../assets/img/gong-fu-tea-screenshot.png';
 
 const Wrapper = styled.div`
-  margin: 30px 0 0 0;
+  margin: 50px 0 0 0;
   width: 100%;
   height: 400px;
   font-family: 'Raleway', sans-serif;
@@ -56,13 +56,11 @@ text-align: center;
 font-size: .75em;
 font-weight: 300;
 line-height: 1.2em;
-margin: 2px;
+margin: 2px 0 30px 0;
 `;
 
 const ImgWrapper = styled.div`
 width: 400px;
-height: 300px;
-// border: .2px solid black;
 box-shadow: .5px .5px 8px .2px grey;
 `;
 
@@ -80,12 +78,12 @@ function Projects() {
         <Tableau>
           <Header>Tableau</Header>
           <SubHeader>React.js/Redux, Node.js, Express.js, AWS S3, <br/>MongoDB, Mongoose, Heroku, Mlab</SubHeader>
-          <ImgWrapper><img style={{ width: '100%'}}src={tableauImg} alt=''/></ImgWrapper>
+          <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={tableauImg} alt=''/></ImgWrapper>
         </Tableau>
         <Project>
           <Header>Gong Fu Tea</Header>
           <SubHeader>Mobile-first, Node.js, Express.js, Google Maps API, <br/> PostgreSQL, MongoDB, Mongoose, TDD, Jquery, Heroku</SubHeader>
-          <ImgWrapper><img style={{ width: '100%'}}src={gongFuImg} alt=''/></ImgWrapper>
+          <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={gongFuImg} alt=''/></ImgWrapper>
         </Project>
       </Wrapper>
     </div>
