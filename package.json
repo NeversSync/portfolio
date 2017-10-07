@@ -16,13 +16,16 @@
     "styled-components": "^2.1.1"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf docs && mv build docs",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
-  "homepage": "https://neverssync.github.io/portfolio/"
+  "homepage": "https://neverssync.github.io/portfolio"
 }

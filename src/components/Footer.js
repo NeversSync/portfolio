@@ -1,6 +1,5 @@
 import React from 'react';
 import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
-import styled from 'styled-components';
 import RaisedButton from 'material-ui/RaisedButton';
 import ResumeIcon from 'react-material-icons/icons/action/description';
 import { Wrapper, Copy } from './styles/Footer.style';

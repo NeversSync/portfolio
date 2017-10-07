@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import RaisedButton from 'material-ui/RaisedButton';
 import EmailIcon from 'react-material-icons/icons/communication/email';
 import { Wrapper, Copy } from './styles/Contact.style';
