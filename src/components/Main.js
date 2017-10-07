@@ -12,7 +12,7 @@ function Main() {
       <About/>
       <Projects/>
       <Contact/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

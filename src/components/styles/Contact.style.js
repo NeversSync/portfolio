@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
 width: 100%;
 font-family: 'Raleway', sans-serif;
-background-color: hsla(0, 0%, 55%, 0.40); 
+background-color: hsla(0, 0%, 55%, 0.6); 
 color: white;
-height: 190px;
+height: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -18,7 +18,13 @@ font-style: italic;
 font-weight: 400;
 letter-spacing: .7px;
 line-height: 1.7;
-margin: 30px 0 10px 0;
+margin-bottom: 10px;
 `;
 
-export { Wrapper, Copy };
+const Copyright = Copy.extend`
+  text-align: center;
+  font-size: .7em;
+  margin: 15px 0 0 0;
+`;
+
+export { Wrapper, Copy, Copyright };

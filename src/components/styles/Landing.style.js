@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import backgroundImg from '../../assets/img/tetsu2.png';
+// import backgroundImg from '../../assets/img/redwood-img.jpg';
 
 const Wrapper = styled.div`
 color: white;

@@ -42,7 +42,6 @@ const Project = styled.div`
 
 const Header = styled.h2`
 display: block;
-width: 300px;
 text-align: center;
 font-size: .90em;
 font-weight: 600;
@@ -73,14 +72,18 @@ function Projects() {
       <Title><h2>Projects</h2></Title>
       <Wrapper>
         <Project>
-          <Header>Tableau</Header>
-          <SubHeader>React.js/Redux, Node.js, Express.js, AWS S3, <br/>MongoDB, Mongoose, Heroku, Mlab</SubHeader>
-          <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={tableauImg} alt=''/></ImgWrapper>
+          <a href="https://the-tableau-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <Header>Tableau</Header>
+            <SubHeader>React.js/Redux, Node.js, Express.js, AWS S3, <br/>MongoDB, Mongoose, Heroku, Mlab</SubHeader>
+            <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={tableauImg} alt=''/></ImgWrapper>
+          </a>
         </Project>
         <Project>
-          <Header>Gong Fu Tea</Header>
-          <SubHeader>Mobile-first, Node.js, Express.js, Google Maps API, <br/> PostgreSQL, MongoDB, Mongoose, TDD, Jquery, Heroku</SubHeader>
-          <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={gongFuImg} alt=''/></ImgWrapper>
+          <a href="https://gongfucha.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <Header>Gong Fu Tea</Header>
+            <SubHeader>Mobile-first, Node.js, Express.js, Google Maps API, <br/> PostgreSQL, MongoDB, Mongoose, TDD, Jquery, Heroku</SubHeader>
+            <ImgWrapper><img style={{ width: '100%', height: '100%' }}src={gongFuImg} alt=''/></ImgWrapper>
+          </a>
         </Project>
       </Wrapper>
     </div>
