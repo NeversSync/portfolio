@@ -7,6 +7,8 @@ import GithubIcon from 'react-icons/lib/fa/github-square';
 import EmailIcon from 'react-icons/lib/fa/envelope';
 import { Wrapper, Copy, Copyright, SocialIcon } from './styles/Contact.style';
 
+// TODO: add hover to social icons
+
 function Contact() {
   return (
     <Wrapper>
