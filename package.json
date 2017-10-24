@@ -28,5 +28,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d docs"
   },
-  "homepage": "nickyevers.com"
+  "homepage": "http://nickyevers.com/"
 }
