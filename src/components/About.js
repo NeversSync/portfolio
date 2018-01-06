@@ -10,7 +10,7 @@ function About() {
       <HeaderWrapper>
         <div><Header>Hi, I'm Nicky.</Header>
         </div>
-        <SubHeader>I'm a Full-Stack web developer and I'm ready to work.</SubHeader>
+        <SubHeader>I'm a design driven Web Developer and I'm ready to work.</SubHeader>
       </HeaderWrapper>
       <Text>
         <ImgWrapper>
