@@ -25,7 +25,7 @@ function About() {
           <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently looking for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
           <Social>
             <a href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><GithubIcon size={30}/></a>
-            <a href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon size={30}/></a>
+            <a href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon class='icon' size={30}/></a>
           </Social>
         </CopyWrapper>
       </Content>

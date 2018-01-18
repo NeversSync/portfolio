@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const H2 = styled.h2`
-font-size: 1.2em;
+font-size: 1.3em;
 font-weight: 700;
 
 @media(min-width:768px) {
@@ -10,7 +10,7 @@ font-weight: 700;
 `;
 
 const H3 = styled.h3`
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 300;
 
   @media(min-width:768px) {
@@ -19,7 +19,7 @@ const H3 = styled.h3`
 `;
 
 const P = styled.p`
-  font-size: .9em;
+  font-size: 1.1em;
   font-weight: 400;
 
   @media(min-width:768px) {
