@@ -12,12 +12,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App" style={{width: '100%'}}>
             <Switch>
               <Route exact path='/' render={() => <Main />} />
-              {/* <Route path='/about' render={() => <About />} />
-              <Route path='/places' render={() => <Main />} />
-              <Route path='/vendors' render={() => <Vendors/>} /> */}
               <Redirect to='/' />
             </Switch>
         </div>

@@ -1,20 +1,29 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  width: 80%;
+  display: flex;
   color: black;
   font-family: 'Raleway', sans-serif;
-  height: 375px;
-  margin: 50px;
-  margin-top: 70px;
+  margin-top: 30px;
   letter-spacing: .2px;
   line-height: 1.7;
+
+  @media(min-width: 768px) {
+    // padding: 50px;
+  }
 `;
 
 const Text = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%
+  width: 100%;
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const HeaderWrapper = styled.div`
@@ -34,7 +43,13 @@ const SubHeader = styled.h3`
 `;
 
 const ImgWrapper = styled.div`
-  width: 400px;
+  width: 70%;
+
+  @media(min-width:768px) {
+    // width: 300px;
+  }
+  // justify-content: space-around;
+  // padding: 0 40px 0 40px;
 `;
 
 const CopyWrapper = styled.div`
