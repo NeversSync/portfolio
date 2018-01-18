@@ -28,9 +28,6 @@ const Copyright = Copy.extend`
 
 const SocialIcon = styled.a`
   margin: 4px;
-    &:hover {
-      color: orange;
-    }
 `;
 
 export { Wrapper, Copy, Copyright, SocialIcon };

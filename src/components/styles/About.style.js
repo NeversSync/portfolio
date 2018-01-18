@@ -74,4 +74,8 @@ const Social = styled.div`
   }
 `;
 
-export { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social };
+const SocialIcon = styled.a`
+  margin: 2px;
+`;
+
+export { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social, SocialIcon };

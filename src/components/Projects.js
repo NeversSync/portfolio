@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import tableauImg from '../assets/img/tableau-screen-shot.png';
 import gongFuImg from '../assets/img/gong-fu-tea-screenshot.png';
 import { Wrapper, Header, SubHeader, Project, Img, Title } from './styles/Projects.style';

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { P, H3 } from './Utilities.style';
+import { H3 } from './Utilities.style';
 
 const Wrapper = styled.div`
   font-family: 'Raleway', sans-serif;

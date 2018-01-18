@@ -1,10 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Nicky Evers Portfolio",
+  "name": "Nicky Evers Portfolio",
   "icons": [
     {
       "src": "djnevers-logo.ico",
-      "sizes": "192x192",
+      "sizes": "256x256",
       "type": "image/png"
     }
   ],

@@ -22,7 +22,7 @@ function Contact() {
           href={resumeLink}
           primary={true} 
           target='_blank'
-          style={{width: '150', height: '50', margin: '10px 15px', textTransform: 'lowercase'}}
+          style={{width: '150px', height: '50px', margin: '10px 15px', textTransform: 'lowercase'}}
           icon={<ResumeIcon/>}
         />
         <Copyright>&copy; Nicky Evers 2017
