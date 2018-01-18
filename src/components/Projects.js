@@ -3,13 +3,10 @@ import tableauImg from '../assets/img/tableau-screen-shot.png';
 import gongFuImg from '../assets/img/gong-fu-tea-screenshot.png';
 import { Wrapper, Header, SubHeader, Project, Img, Title } from './styles/Projects.style';
 
-// TODO:
-// add github button link to each project
-
 function Projects() {
   return (
     <div>
-      <Title><h2>Projects</h2></Title>
+      <Title>Projects</Title>
       <Wrapper>
         <Project>
           <a href="https://the-tableau-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">

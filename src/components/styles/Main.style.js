@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   overflow-x: hidden;
   letter-spacing: .2px;
   line-height: 1.7;
+  font-family: 'Raleway', sans-serif;
 `;
 
 export { Wrapper };

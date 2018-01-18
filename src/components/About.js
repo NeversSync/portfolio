@@ -33,7 +33,6 @@ class About extends Component {
   }
 
   render() {
-
     return (
       <Wrapper id='about'>
         <HeaderWrapper>
@@ -54,15 +53,15 @@ class About extends Component {
             <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently looking for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
             <Social>
               <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon 
-              color={this.state.email} size={35} 
+              color={this.state.email} size={40} 
               onMouseEnter={this.toggleEmailHover} onMouseLeave={this.toggleEmailHover}
               style={{ transition: '.3s ease'}} /></SocialIcon>
               <SocialIcon href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><GithubIcon 
-              color={this.state.github} size={35} 
+              color={this.state.github} size={40} 
               onMouseEnter={this.toggleGithubHover} onMouseLeave={this.toggleGithubHover}
               style={{ transition: '.3s ease'}}/></SocialIcon>
               <SocialIcon href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon 
-              color={this.state.linkedIn} size={35} onMouseEnter={this.toggleLinkedInHover} onMouseLeave={this.toggleLinkedInHover} 
+              color={this.state.linkedIn} size={40} onMouseEnter={this.toggleLinkedInHover} onMouseLeave={this.toggleLinkedInHover} 
               style={{ transition: '.3s ease'}}/></SocialIcon>
             </Social>
           </CopyWrapper>
