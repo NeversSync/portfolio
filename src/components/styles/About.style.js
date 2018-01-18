@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width: 80%;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
   display: flex;
   color: black;
-  font-family: 'Raleway', sans-serif;
+  flex-direction: column;
+  justify-content: space-around;
   margin-top: 30px;
   letter-spacing: .2px;
   line-height: 1.7;
@@ -43,13 +45,12 @@ const SubHeader = styled.h3`
 `;
 
 const ImgWrapper = styled.div`
-  width: 70%;
+  max-width: 300px;
+  min-width: 200px;
 
   @media(min-width:768px) {
     // width: 300px;
   }
-  // justify-content: space-around;
-  // padding: 0 40px 0 40px;
 `;
 
 const CopyWrapper = styled.div`
@@ -66,6 +67,15 @@ const SubCopy = styled.p`
   margin: 1em 0 1em 0;
 `;
 
-export { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, Copy, SubCopy};
+const Social = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media(min-width:768px) {
+    justify-content: flex-start;
+  }
+`;
+
+export { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, Copy, SubCopy, Social };
 
 // Center social icons on mobile
