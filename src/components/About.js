@@ -1,6 +1,6 @@
 import React from 'react';
 import profileImg from '../assets/img/profile-img.jpg';
-import { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social } from './styles/About.style'; 
+import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social } from './styles/About.style'; 
 import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
 import GithubIcon from 'react-icons/lib/fa/github-square';
 
@@ -12,7 +12,7 @@ function About() {
         </div>
         <SubHeader>I'm a design driven Web Developer and I'm ready to work.</SubHeader>
       </HeaderWrapper>
-      <Text>
+      <Content>
         <ImgWrapper>
           <img style={{
             width: '100%',
@@ -28,7 +28,7 @@ function About() {
             <a href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon size={30}/></a>
           </Social>
         </CopyWrapper>
-      </Text>
+      </Content>
     </Wrapper >
   );
 }
