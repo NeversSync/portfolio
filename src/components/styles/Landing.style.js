@@ -14,7 +14,7 @@ background-position: center center;
 `;
 
 const Header = styled.div`
-height: 87vh;
+height: 89vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -44,5 +44,3 @@ const SubTitle = styled.h2`
 `;
 
 export { Wrapper, Background, Header, SubTitle, Title };
-
-// TODO: hover color and animation for arrow
