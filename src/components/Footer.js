@@ -1,10 +1,10 @@
 import React from 'react';
-import { Wrapper, Copy } from './styles/Footer.style';
+import { Wrapper, Copyright } from './styles/Footer.style';
 
 function Footer() {
   return (
     <Wrapper>
-      <Copy>&copy; Nicky Evers 2017</Copy>
+      <Copyright>&copy; Nicky Evers 2017</Copyright>
     </Wrapper>
   );
 }

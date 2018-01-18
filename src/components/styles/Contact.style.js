@@ -17,7 +17,6 @@ font-size: 1em;
 font-style: italic;
 font-weight: 400;
 letter-spacing: .7px;
-line-height: 1.7;
 margin-bottom: 10px;
 `;
 

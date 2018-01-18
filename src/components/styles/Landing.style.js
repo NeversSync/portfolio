@@ -26,12 +26,21 @@ font-size: 6.5vw;
 
 const Title = styled.h1`
 margin: 30px;
+font-size: 1.8em; 
 font-weight: 400;
+
+  @media(min-width: 768px) {
+    font-size: .7em;
+  }
 `;
 
 const SubTitle = styled.h2`
-font-size: 22px;
-font-weight: 300;
+  font-size: .9em;
+  font-weight: 300;
+
+  @media(min-width: 768px) {
+    font-size: .38em;
+  }
 `;
 
 export { Wrapper, Background, Header, SubTitle, Title };

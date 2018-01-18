@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import{ P } from './Utilities.style';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -44,30 +45,32 @@ const Project = styled.div`
     }
 `;
 
-const Header = styled.h2`
-display: block;
-text-align: center;
-font-size: .90em;
-font-weight: 600;
-line-height: 1.5em;
-margin: 2px;
+const Header = P.extend`
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 2px;
 `;
 
 const SubHeader = styled.h3`
-text-align: center;
-font-size: .75em;
-font-weight: 300;
-line-height: 1.2em;
-margin: 2px 0 30px 0;
+  text-align: center;
+  font-size: .85em;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 2px 0 30px 0;
+
+  @media(min-width:768px) {
+    font-size: .75em;
+  }
 `;
 
 const ImgWrapper = styled.div`
-width: 300px;
-box-shadow: .5px .5px 8px .2px grey;
+  width: 300px;
+  box-shadow: .5px .5px 8px .2px grey;
 
-@media(min-width:768px) {
-  width: 400px;
-}
+  @media(min-width:768px) {
+    width: 400px;
+  }
 `;
 
 export { Wrapper, Header, SubHeader, ImgWrapper, Project, Title };

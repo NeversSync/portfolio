@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { P, H2, H3 } from './Utilities.style';
 
 const Wrapper = styled.div`
   font-family: 'Raleway', sans-serif;
@@ -7,8 +8,6 @@ const Wrapper = styled.div`
   justify-content: center;
   color: black;
   margin: 10% 6%;
-  letter-spacing: .2px;
-  line-height: 1.7;
 
   @media(min-width: 768px) {
     min-height: 650px;
@@ -24,16 +23,12 @@ const HeaderWrapper = styled.div`
   }
 `;
 
-const Header = styled.h2`
+const Header = H2.extend`
 text-align: center;
-font-size: 1.15em;
-font-weight: 700;
 `;
 
-const SubHeader = styled.h3`
+const SubHeader = H3.extend`
 text-align: center;
-font-size: 1.05em;
-font-weight: 300;
 `;
 
 const Content = styled.div`
@@ -66,13 +61,7 @@ const CopyWrapper = styled.div`
   }
 `;
 
-const Copy = styled.p`
-  font-size: .8em;
-  font-weight: 400;
-`;
-
-const SubCopy = styled.p`
-  font-size: .75em;
+const SubCopy = P.extend`
   margin: 1em 0 1em 0;
 `;
 
@@ -85,4 +74,4 @@ const Social = styled.div`
   }
 `;
 
-export { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, Copy, SubCopy, Social };
+export { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social };
