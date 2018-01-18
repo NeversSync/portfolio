@@ -1,37 +1,50 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-width: 100%;
 font-family: 'Raleway', sans-serif;
 background-color: hsla(0, 0%, 55%, 0.6); 
 color: white;
-height: 200px;
+min-height: 250px;
 display: flex;
 justify-content: center;
-align-items: center;
+// align-items: space-evenly;
 flex-direction: column;
 `;
 
+const ButtonWrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+@media(min-width: 768px) {
+  flex-direction: row;
+}
+`;
+
 const Copy = styled.p`
+text-align: center;
 font-size: 1em;
 font-style: italic;
 font-weight: 400;
 letter-spacing: .7px;
-line-height: 1.7;
 margin-bottom: 10px;
 `;
 
 const Copyright = Copy.extend`
   text-align: center;
-  font-size: .7em;
+  font-size: .8em;
   margin: 15px 0 0 0;
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 
 const SocialIcon = styled.a`
   margin: 4px;
-    &:hover {
-      color: orange;
-    }
 `;
 
-export { Wrapper, Copy, Copyright, SocialIcon };
+export { Wrapper, Copy, Copyright, SocialIcon, ButtonWrapper, IconWrapper };

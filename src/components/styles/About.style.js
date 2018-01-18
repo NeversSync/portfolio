@@ -1,20 +1,37 @@
 import styled from 'styled-components';
+import { P, H2, H3 } from './Utilities.style';
 
 const Wrapper = styled.div`
-  width: 80%;
-  display: flex;
-  color: black;
   font-family: 'Raleway', sans-serif;
-  margin-top: 30px;
-  letter-spacing: .2px;
-  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  margin: 10% 6%;
 
   @media(min-width: 768px) {
-    // padding: 50px;
+    min-height: 650px;
+    margin: 3% 13%;
   }
 `;
 
-const Text = styled.div`
+const HeaderWrapper = styled.div`
+  margin-bottom: 30px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 54px;
+  }
+`;
+
+const Header = H2.extend`
+text-align: center;
+`;
+
+const SubHeader = H3.extend`
+text-align: center;
+`;
+
+const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,44 +43,39 @@ const Text = styled.div`
   }
 `;
 
-const HeaderWrapper = styled.div`
-  margin-bottom: 1em;
-`;
-
-const Header = styled.h2`
-  text-align: center;
-  font-size: 1.15em;
-  font-weight: 700;
-`;
-
-const SubHeader = styled.h3`
-  text-align: center;
-  font-size: 1.05em;
-  font-weight: 300;
-`;
-
 const ImgWrapper = styled.div`
-  width: 70%;
+  max-width: 350px;
+  min-width: 150px;
 
   @media(min-width:768px) {
-    // width: 300px;
+    max-width: 550px;
+    min-width: 275px;
   }
-  // justify-content: space-around;
-  // padding: 0 40px 0 40px;
 `;
 
 const CopyWrapper = styled.div`
-  margin: 20px;
+  margin: 0px 5px;
+
+  @media(min-width:768px) {
+    margin: 0px 20px;  
+  }
 `;
 
-const Copy = styled.p`
-  font-size: .8em;
-  font-weight: 400;
-`;
-
-const SubCopy = styled.p`
-  font-size: .75em;
+const SubCopy = P.extend`
   margin: 1em 0 1em 0;
 `;
 
-export { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, Copy, SubCopy};
+const Social = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media(min-width:768px) {
+    justify-content: flex-start;
+  }
+`;
+
+const SocialIcon = styled.a`
+  margin: 2px;
+`;
+
+export { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social, SocialIcon };
