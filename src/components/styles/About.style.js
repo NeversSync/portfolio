@@ -67,3 +67,5 @@ const SubCopy = styled.p`
 `;
 
 export { Wrapper, Text, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, Copy, SubCopy};
+
+// Center social icons on mobile

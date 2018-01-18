@@ -35,3 +35,5 @@ font-weight: 300;
 `;
 
 export { Wrapper, Background, Header, SubTitle, Title };
+
+// TODO: hover color and animation for arrow

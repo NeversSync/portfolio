@@ -35,3 +35,5 @@ const SocialIcon = styled.a`
 `;
 
 export { Wrapper, Copy, Copyright, SocialIcon };
+
+// fix centering when wrapper for footer text

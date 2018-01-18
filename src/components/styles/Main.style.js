@@ -6,3 +6,5 @@ const Wrapper = styled.div`
 `;
 
 export { Wrapper };
+
+// TODO: change favicon
