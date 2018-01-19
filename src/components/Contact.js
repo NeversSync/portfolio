@@ -42,7 +42,7 @@ class Contact extends Component {
       <Wrapper>
         <Copy>Hiring? Need help on a project? Lets talk.</Copy>
         <ButtonWrapper>
-          <IconWrapper>
+          {/* <IconWrapper>
             <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon 
             size={50} color={this.state.email} 
             onMouseEnter={this.toggleEmailHover} 
@@ -57,7 +57,7 @@ class Contact extends Component {
             onMouseEnter={this.toggleLinkedInHover} 
             onMouseLeave={this.toggleLinkedInHover}
             style={{ transition: '.3s ease'}} /></SocialIcon>
-          </IconWrapper>
+          </IconWrapper> */}
           <RaisedButton
             label='Resume'
             href={resumeLink}

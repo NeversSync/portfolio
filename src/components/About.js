@@ -50,7 +50,7 @@ class About extends Component {
           <CopyWrapper>
             <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan.
           </SubCopy>
-            <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently looking for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
+            <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently available for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
             <Social>
               <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon 
               color={this.state.email} size={50} 
