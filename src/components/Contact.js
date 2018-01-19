@@ -38,6 +38,7 @@ class Contact extends Component {
   }
 
   render() {
+    let test = '4';
     return (
       <Wrapper>
         <Copy>Hiring? Need help on a project? Lets talk.</Copy>
@@ -63,7 +64,7 @@ class Contact extends Component {
             href={resumeLink}
             primary={true}
             target='_blank'
-            style={{ width: '150px', height: '50px', margin: '10px 15px'}}
+            style={{ width: '135px', height: '40px', margin: '10px 15px'}}
             labelPosition='center'
             labelStyle={{ fontSize: '16px'}}
             icon={<ResumeIcon />}

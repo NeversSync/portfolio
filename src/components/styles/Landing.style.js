@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import backgroundImg from '../../assets/img/tetsu2.jpg';
-// import backgroundImg from '../../assets/img/redwood-img.jpg';
+import backgroundImg4 from '../../assets/img/aerial-forest-compressed.jpg';
 
 const Wrapper = styled.div`
-color: white;
+color: white; 
 `;
 
 const Background = styled.div`
-background: url(${backgroundImg});
+background: url(${backgroundImg4});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
@@ -20,7 +19,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 font-family: 'Raleway', sans-serif;
-text-shadow: 3px 3px 3px 1px black;
+text-shadow: 3px 3px 14px black;
 font-size: 6.5vw;
 `;
 
