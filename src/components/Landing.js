@@ -8,7 +8,7 @@ class Landing extends Component {
     super(props);
     this.state = {
       color: 'hsla(187, 55%, 50%, 1)',
-      size: '100'
+      size: 100
     };
 
     this.hoverToggle = this.hoverToggle.bind(this);
@@ -16,7 +16,7 @@ class Landing extends Component {
 
   hoverToggle() {
     this.state.color === 'hsla(187, 55%, 50%, 1)' ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' }) : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
-    this.state.size === '100' ? this.setState({ size: '105'}) : this.setState({ size: '100'});
+    this.state.size === 100 ? this.setState({ size: '105'}) : this.setState({ size: 100});
   }
 
   render() {

@@ -10,4 +10,4 @@ const Wrapper = styled.div`
 
 export { Wrapper };
 
-// TODO: change favicon, change main image
+// TODO: change favicon
