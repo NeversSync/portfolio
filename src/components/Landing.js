@@ -7,7 +7,7 @@ class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: 'white',
+      color: 'hsla(187, 55%, 50%, 1)',
       size: '100'
     };
 
@@ -15,7 +15,7 @@ class Landing extends Component {
   }
 
   hoverToggle() {
-    this.state.color === 'white' ? this.setState({ color: 'hsla(187, 55%, 50%, 1)' }) : this.setState({ color: 'white' });
+    this.state.color === 'hsla(187, 55%, 50%, 1)' ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' }) : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
     this.state.size === '100' ? this.setState({ size: '105'}) : this.setState({ size: '100'});
   }
 

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
 import ResumeIcon from 'react-material-icons/icons/action/description';
-import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
-import GithubIcon from 'react-icons/lib/fa/github-square';
-import EmailIcon from 'react-icons/lib/fa/envelope';
-import { Wrapper, Copy, Copyright, SocialIcon, ButtonWrapper, IconWrapper } from './styles/Contact.style';
+import { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper } from './styles/Contact.style';
 
 const orange = 'hsl(23, 95%, 55%';
 const hoverOrange = 'hsl(23, 100%, 35%';
@@ -38,37 +34,11 @@ class Contact extends Component {
   }
 
   render() {
-    let test = '4';
     return (
       <Wrapper>
         <Copy>Hiring? Need help on a project? Lets talk.</Copy>
         <ButtonWrapper>
-          {/* <IconWrapper>
-            <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon 
-            size={50} color={this.state.email} 
-            onMouseEnter={this.toggleEmailHover} 
-            onMouseLeave={this.toggleEmailHover}
-            style={{ transition: '.3s ease'}}/></SocialIcon>
-            <SocialIcon href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><GithubIcon 
-            size={50} color={this.state.github} 
-            onMouseEnter={this.toggleGithubHover} 
-            onMouseLeave={this.toggleGithubHover}
-            style={{ transition: '.3s ease'}} /></SocialIcon>
-            <SocialIcon href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon size={50} color={this.state.linkedIn} 
-            onMouseEnter={this.toggleLinkedInHover} 
-            onMouseLeave={this.toggleLinkedInHover}
-            style={{ transition: '.3s ease'}} /></SocialIcon>
-          </IconWrapper> */}
-          <RaisedButton
-            label='Resume'
-            href={resumeLink}
-            primary={true}
-            target='_blank'
-            style={{ width: '135px', height: '40px', margin: '10px 15px'}}
-            labelPosition='center'
-            labelStyle={{ fontSize: '16px'}}
-            icon={<ResumeIcon />}
-          />
+          <Button><a href={resumeLink} target='_blank'><LabelWrapper><ResumeIcon color={'white'} style={{ margin: '0px 4px'}}/>Resume</LabelWrapper></a></Button>
         </ButtonWrapper>
         <Copyright>&copy; Nicky Evers 2017
         </Copyright>

@@ -75,6 +75,10 @@ const Social = styled.div`
 `;
 
 const SocialIcon = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
   margin: 2px;
 `;
 
