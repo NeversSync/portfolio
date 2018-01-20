@@ -38,7 +38,7 @@ class Contact extends Component {
       <Wrapper>
         <Copy>Hiring? Need help on a project? Lets talk.</Copy>
         <ButtonWrapper>
-          <Button><a href={resumeLink} target='_blank'><LabelWrapper><ResumeIcon color={'white'} style={{ margin: '0px 4px'}}/>Resume</LabelWrapper></a></Button>
+          <Button><a href={resumeLink} target="_blank" rel="noopener noreferrer"><LabelWrapper><ResumeIcon color={'white'} style={{ margin: '0px 4px'}}/><p>Resume</p></LabelWrapper></a></Button>
         </ButtonWrapper>
         <Copyright>&copy; Nicky Evers 2017
         </Copyright>

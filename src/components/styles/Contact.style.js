@@ -26,12 +26,14 @@ const Button = styled.button`
   font-family: 'Raleway', sans-serif;
   width: 169px;
   height: 53px;
-  font-size: 1em;
+  font-size: 1.4em;
+
   border: none;
   transition: .3s ease;
   cursor: pointer;
 
   @media(min-width: 768px) {
+    font-size: 1.2em;
 
     &:hover {
       width: 175px;
@@ -49,12 +51,17 @@ const LabelWrapper = styled.div`
 `;
 
 const Copy = styled.p`
+  margin: 0 15%;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-style: italic;
   font-weight: 400;
   letter-spacing: .7px;
   margin-bottom: 16px;
+
+  @media(min-width:768px) {
+    font-size: 1.2em;
+  }
 `;
 
 const Copyright = Copy.extend`
