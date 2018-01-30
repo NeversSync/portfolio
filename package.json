@@ -26,5 +26,5 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "homepage": "http://nickyevers.com/"
+  "homepage": "nickyevers.com/"
 }
