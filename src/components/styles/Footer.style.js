@@ -22,25 +22,39 @@ const ButtonWrapper = styled.div`
 const Button = styled.button`
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: hsla(187, 65%, 45%, 1);
+  align-items: center; 
   font-family: 'Raleway', sans-serif;
   width: 169px;
   height: 53px;
-  font-size: 1.4em;
-
+  font-size: 1.4em; 
+  padding: 6px 13px;
+  margin-top: .7rem;
+  background: linear-gradient(hsla(187, 65%, 55%, 1), hsla(187, 65%, 40%, 1));
+  color: #fff;
   border: none;
+  border-bottom: 3px solid hsla(187, 65%, 30%, .7);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
   transition: .3s ease;
   cursor: pointer;
 
   @media(min-width: 768px) {
     font-size: 1.2em;
+    margin-top: .7rem;
 
     &:hover {
-      width: 175px;
-      height: 60px;
-      background-color: hsla(187, 100%, 30%, 1);
+      width: 172px;
+      height: 58px;
+      background: linear-gradient(hsla(187, 65%, 58%, 1), hsla(187, 65%, 40%, 1));
       box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    }
+  }
+
+  &:active {
+    background: linear-gradient(hsla(187, 65%, 45%, 1), hsla(187, 65%, 35%, 1));
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    border-bottom: none;
+    box-shadow: none;
   }
 `;
 
@@ -76,4 +90,4 @@ const Copyright = Copy.extend`
   }
 `;
 
-export { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper};
+export { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper };
