@@ -43,6 +43,12 @@ const Project = styled.div`
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
   }
+
+  &:active {
+    -webkit-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+    box-shadow: none;
+  }
 `;
 
 const Header = H3.extend`

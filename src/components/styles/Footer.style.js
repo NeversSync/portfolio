@@ -17,6 +17,7 @@ const ButtonWrapper = styled.div`
   align-items: center;
   min-width: 175px;
   min-height: 60px;
+  max-height: 53px;
 `;
 
 const Button = styled.button`
