@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
 import ResumeIcon from 'react-material-icons/icons/action/description';
 import { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper } from './styles/Footer.style';

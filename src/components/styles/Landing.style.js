@@ -42,4 +42,11 @@ const SubTitle = styled.h2`
   }
 `;
 
-export { Wrapper, Background, Header, SubTitle, Title };
+const ArrowWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100px;
+`;
+
+export { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper };
