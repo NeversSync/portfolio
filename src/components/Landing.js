@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Scrollchor from 'react-scrollchor';
 import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
-import { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper } from './styles/Landing.style';
-// import backgroundImg4 from '../assets/img/aerial-forest-compressed.jpg';
+import { Wrapper, Header, SubTitle, Title, ArrowWrapper } from './styles/Landing.style';
+import backgroundImg from '../assets/img/aerial-forest-compressed.jpg';
 
 class Landing extends Component {
   constructor(props) {
@@ -31,36 +31,31 @@ class Landing extends Component {
   }
 
   render() {
-    
+
     return (
       <Wrapper>
-          {
-            this.state.imageLoaded === false ? (<Header />) : (
-              <div>
-            <Background>
-                <Header>
-                  <SubTitle>Web Developer</SubTitle>
-                  <Title>Nicky Evers</Title>
-                </Header>
-                <ArrowWrapper>
-                  <Scrollchor to="#about" animate={{ duration: 900 }}
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                    }}>
-                    <ArrowIcon
-                      onMouseEnter={this.hoverToggle} onMouseLeave={this.hoverToggle}
-                      style={{
-                        color: this.state.color,
-                        width: this.state.size,
-                        height: this.state.size
-                      }} />
-                  </Scrollchor>
-                </ArrowWrapper>
-        </Background>
-              </div>
-            )
-          }
+        {/* <Background> */}
+          <img className='background-img' alt='' src={`${backgroundImg}`}/>
+          <Header>
+            <SubTitle>Web Developer</SubTitle>
+            <Title>Nicky Evers</Title>
+          </Header>
+          <ArrowWrapper>
+            <Scrollchor to="#about" animate={{ duration: 900 }}
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+              }}>
+              <ArrowIcon
+                onMouseEnter={this.hoverToggle} onMouseLeave={this.hoverToggle}
+                style={{
+                  color: this.state.color,
+                  width: this.state.size,
+                  height: this.state.size
+                }} />
+            </Scrollchor>
+          </ArrowWrapper>
+        {/* </Background> */}
       </Wrapper>
     );
   }
