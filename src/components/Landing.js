@@ -16,6 +16,8 @@ class Landing extends Component {
     this.hoverToggle = this.hoverToggle.bind(this);
   }
 
+  // TODO: change img src based on img loading/component life cycle. add animations: https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935
+
   // imageHasLoaded() {
   //   console.log('loaded');
   //   this.setState({ imageLoaded: true });
