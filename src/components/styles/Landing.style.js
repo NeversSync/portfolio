@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_1412/v1519770562/aerial-forest-hero-img.jpg';  
+// const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_1412/v1519770562/aerial-forest-hero-img.jpg';  
+const heroImgUrl = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_1412/v1519770562/Portfolio/aerial-forest-hero-img.jpg';  
 
 const Wrapper = styled.div`
 color: white; 

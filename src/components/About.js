@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import profileImg from '../assets/img/profile-img.jpg';
 import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social, SocialIcon } from './styles/About.style';
 import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
 import GithubIcon from 'react-icons/lib/fa/github-square';
 import EmailIcon from 'react-icons/lib/fa/envelope-square';
+const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/v1519772068/Portfolio/profile-img.jpg';
 
 class About extends Component {
   constructor(props) {

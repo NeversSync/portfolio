@@ -1,7 +1,8 @@
 import React from 'react';
-import tableauImg from '../assets/img/tableau-screen-shot.png';
-import gongFuImg from '../assets/img/gong-fu-tea-screenshot.png';
 import { Wrapper, Header, SubHeader, Project, Img, Title } from './styles/Projects.style';
+const tableauImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/dpr_auto,f_auto,q_auto:good/v1519772075/Portfolio/tableau-screen-shot.png';
+const gongFuImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/s--OqiFZzIy--/dpr_auto,f_auto,q_jpegmini/v1519772080/Portfolio/gong-fu-tea-screenshot.png';
+
 
 function Projects() {
   return (
