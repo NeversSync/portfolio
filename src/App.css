@@ -31,12 +31,3 @@ a {
   transform: translateY(0px);
   transition: all 1500ms ease-out;
 }
-
-/* .fadein-leave {
-  opacity: 1;
-}
-
-.fadein-leave.fadein-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-} */

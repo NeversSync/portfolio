@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import backgroundImg4 from '../../assets/img/aerial-forest-compressed.jpg';
+const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_1412/v1519770562/aerial-forest-hero-img.jpg';  
 
 const Wrapper = styled.div`
 color: white; 
 `;
 
 const Background = styled.div`
-background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255, .5) 80%, rgba(255,255,255,1) 100%), url(${backgroundImg4});
+background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255, .5) 80%, rgba(255,255,255,1) 100%), url(${heroImgUrl});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
