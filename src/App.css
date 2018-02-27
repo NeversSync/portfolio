@@ -11,3 +11,23 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.fadein-appear {
+  opacity: 0;
+}
+
+.fadein-appear.fadein-appear-active {
+  opacity: 1;
+  transition: all 1000ms ease-out;
+}
+
+.fadeup-in-appear {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.fadeup-in-appear.fadeup-in-appear-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1500ms ease-out;
+}
