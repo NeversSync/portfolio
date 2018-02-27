@@ -18,7 +18,7 @@ a {
 
 .fadein-appear.fadein-appear-active {
   opacity: 1;
-  transition: all 1000ms ease-out;
+  transition: all 2000ms ease-out;
 }
 
 .fadeup-in-appear {
@@ -29,5 +29,5 @@ a {
 .fadeup-in-appear.fadeup-in-appear-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 1500ms ease-out;
+  transition: all 2500ms ease-out;
 }

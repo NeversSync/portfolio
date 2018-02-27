@@ -27,7 +27,7 @@ class Landing extends Component {
         <ReactCSSTransitionGroup
           transitionName='fadein'
           transitionAppear={true}
-          transitionAppearTimeout={1000}
+          transitionAppearTimeout={2000}
           transitionEnter={false}
           transitionLeave={false}>
           <Background key={'background'}>
@@ -35,7 +35,7 @@ class Landing extends Component {
         <ReactCSSTransitionGroup
           transitionName='fadeup-in'
           transitionAppear={true}
-          transitionAppearTimeout={1500}
+          transitionAppearTimeout={2500}
           transitionEnter={false}
           transitionLeave={false}>
           <Header key={'header'}>
