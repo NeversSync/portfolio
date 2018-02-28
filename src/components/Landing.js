@@ -27,22 +27,29 @@ class Landing extends Component {
         <ReactCSSTransitionGroup
           transitionName='fadein'
           transitionAppear={true}
-          transitionAppearTimeout={2000}
+          transitionAppearTimeout={1200}
           transitionEnter={false}
           transitionLeave={false}>
           <Background key={'background'}>
 
-        <ReactCSSTransitionGroup
-          transitionName='fadeup-in'
-          transitionAppear={true}
-          transitionAppearTimeout={2500}
-          transitionEnter={false}
-          transitionLeave={false}>
-          <Header key={'header'}>
-            <SubTitle>Web Developer</SubTitle>
-            <Title>Nicky Evers</Title>
-          </Header>
-        </ReactCSSTransitionGroup>
+        <Header>
+          <ReactCSSTransitionGroup
+            transitionName='fadedown-in'
+            transitionAppear={true}
+            transitionAppearTimeout={1500}
+            transitionEnter={false}
+            transitionLeave={false}>
+              <SubTitle key={'subtitle'}>Web Developer</SubTitle>
+          </ReactCSSTransitionGroup>
+          <ReactCSSTransitionGroup
+            transitionName='fadeup-in'
+            transitionAppear={true}
+            transitionAppearTimeout={1500}
+            transitionEnter={false}
+            transitionLeave={false}>
+            <Title key={'title'}>Nicky Evers</Title>
+          </ReactCSSTransitionGroup>
+        </Header>
         <ArrowWrapper>
           <Scrollchor to="#about" animate={{ duration: 900 }}
             style={{

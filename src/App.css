@@ -12,13 +12,15 @@ a {
   color: black;
 }
 
+/* Animations */
+
 .fadein-appear {
   opacity: 0;
 }
 
 .fadein-appear.fadein-appear-active {
   opacity: 1;
-  transition: all 2000ms ease-out;
+  transition: all 1200ms ease-out;
 }
 
 .fadeup-in-appear {
@@ -29,5 +31,16 @@ a {
 .fadeup-in-appear.fadeup-in-appear-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 2500ms ease-out;
+  transition: all 1500ms ease-out;
+}
+
+.fadedown-in-appear {
+  opacity: 0;
+  transform: translateY(-80px);
+}
+
+.fadedown-in-appear.fadedown-in-appear-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1500ms ease-out;
 }
