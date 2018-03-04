@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Scrollchor from 'react-scrollchor';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-// import * as Scrollmagic from 'scrollmagic';
+import * as ScrollMagic from 'scrollmagic';
 import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
 import { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper } from './styles/Landing.style';
 
@@ -16,6 +16,19 @@ class Landing extends Component {
     this.hoverToggle = this.hoverToggle.bind(this);
   }
 
+  componentDidMount() {
+    const controller = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({
+      triggerElement: this.Wrapper,
+      triggerHook: 0,
+      duration: '50%'
+    })
+    .setPin(this.Background, {pushFollowers:false})
+    .addTo(controller);
+  }
+  
+
   hoverToggle() {
     this.state.color === 'hsla(187, 55%, 50%, 1)' ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' }) : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
     this.state.size === '100px' ? this.setState({ size: '110px' }) : this.setState({ size: '100px' });
@@ -24,24 +37,15 @@ class Landing extends Component {
   
   render() {
     
-    // const controller = new Scrollmagic.Controller();
-    // const pinIntroScene = new Scrollmagic.Scene({
-    //   triggerElement: '.background',
-    //   triggerHook: 0
-    // })
-    // .setPin('.background')
-    // .addIndicators()
-    // .addTo(controller);
-    
     return (
-      <Wrapper>
+      <Wrapper innerRef={(comp) => { this.Wrapper = comp;}}>
         <ReactCSSTransitionGroup
           transitionName='fadein'
           transitionAppear={true}
           transitionAppearTimeout={1200}
           transitionEnter={false}
           transitionLeave={false}>
-          <Background className="background" key={'background'}>
+          <Background className="background" innerRef={(comp) => { this.Background = comp;}} key={'background'}>
 
         <Header>
           <ReactCSSTransitionGroup

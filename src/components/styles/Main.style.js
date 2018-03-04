@@ -8,4 +8,9 @@ const Wrapper = styled.div`
   font-family: 'Raleway', sans-serif;
 `;
 
-export { Wrapper };
+const Content = styled.div`
+  background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12%);
+  position: relative;
+`;
+
+export { Wrapper, Content };

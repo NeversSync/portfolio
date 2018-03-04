@@ -24,7 +24,8 @@ const HeaderWrapper = styled.div`
 `;
 
 const Header = H2.extend`
-text-align: center;
+  text-align: center;
+  margin-top: 250px;
 `;
 
 const SubHeader = H3.extend`
