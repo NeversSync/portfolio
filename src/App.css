@@ -44,3 +44,13 @@ a {
   transform: translateY(0px);
   transition: all 1500ms ease-out;
 }
+
+.header-title, .content-comp {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 2s ease-out;
+}
+.header-title.fade-title-in, .content-comp.fade-title-in {
+  opacity: 1;
+  transform: translateY(0px);
+}
