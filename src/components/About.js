@@ -26,20 +26,18 @@ class About extends Component {
     
   }
   componentDidMount() {
+    // Header and Content scroll animations
     const controller = new ScrollMagic.Controller();
-    // Header component fade in
-    new ScrollMagic.Scene({
-      triggerElement:this.Header,
-    })
-    .setClassToggle(this.Header, 'fade-title-in')
-    .addTo(controller);
-
-    // Content component fade in
-    new ScrollMagic.Scene({
-      triggerElement:this.Content,
-    })
-    .setClassToggle(this.Content, 'fade-title-in')
-    .addTo(controller);
+    const animatedComponents = [this.Header, this.Content];
+    animatedComponents.forEach(comp => {
+      new ScrollMagic.Scene({
+        triggerElement:comp,
+        triggerHook: .9,
+        reverse: false
+      })
+      .setClassToggle(comp, 'fade-title-in')
+      .addTo(controller);
+    });
   }
   
   toggleEmailHover() {
