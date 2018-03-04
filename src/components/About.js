@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import * as ScrollMagic from 'scrollmagic';
 import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social, SocialIcon } from './styles/About.style';
 import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
 import GithubIcon from 'react-icons/lib/fa/github-square';
 import EmailIcon from 'react-icons/lib/fa/envelope-square';
 const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/v1519772068/Portfolio/profile-img.jpg';
 
+
 class About extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       email: 'hsla(0, 0%, 37%, 1)',
       emailSize: 50,
@@ -17,36 +19,53 @@ class About extends Component {
       linkedIn: 'hsla(0, 0%, 37%, 1)',
       linkedInSize: 50
     };
-
+    
     this.toggleEmailHover = this.toggleEmailHover.bind(this);
     this.toggleGithubHover = this.toggleGithubHover.bind(this);
     this.toggleLinkedInHover = this.toggleLinkedInHover.bind(this);
+    
   }
+  componentDidMount() {
+    const controller = new ScrollMagic.Controller();
+    // Header component fade in
+    new ScrollMagic.Scene({
+      triggerElement:this.Header,
+    })
+    .setClassToggle(this.Header, 'fade-title-in')
+    .addTo(controller);
 
+    // Content component fade in
+    new ScrollMagic.Scene({
+      triggerElement:this.Content,
+    })
+    .setClassToggle(this.Content, 'fade-title-in')
+    .addTo(controller);
+  }
+  
   toggleEmailHover() {
     this.state.email === 'hsla(0, 0%, 37%, 1)' ? (this.setState({ email: 'hsla(187, 55%, 50%, 1)' })) : (this.setState({ email: 'hsla(0, 0%, 37%, 1)' }));
     this.state.emailSize === 50 ? (this.setState({ emailSize: 45 })) : this.setState({ emailSize: 50 });
   }
-
+  
   toggleGithubHover() {
     this.state.github === 'hsla(0, 0%, 37%, 1)' ? (this.setState({ github: 'hsla(187, 55%, 50%, 1)' })) : (this.setState({ github: 'hsla(0, 0%, 37%, 1)' }));
     this.state.githubSize === 50 ? (this.setState({ githubSize: 45 })) : this.setState({ githubSize: 50 });
   }
-
+  
   toggleLinkedInHover() {
     this.state.linkedIn === 'hsla(0, 0%, 37%, 1)' ? (this.setState({ linkedIn: 'hsla(187, 55%, 50%, 1)' })) : (this.setState({ linkedIn: 'hsla(0, 0%, 37%, 1)' }));
     this.state.linkedInSize === 50 ? (this.setState({ linkedInSize: 45 })) : this.setState({ linkedInSize: 50 });
   }
+  
 
   render() {
     return (
       <Wrapper id='about'>
-        <HeaderWrapper>
-          <div><Header>Hi, I'm Nicky.</Header>
-          </div>
+        <HeaderWrapper innerRef={(comp) => { this.Header = comp; }} className="header-title">
+          <Header >Hi, I'm Nicky.</Header>
           <SubHeader>I'm a design driven Web Developer and I'm ready to work.</SubHeader>
         </HeaderWrapper>
-        <Content>
+        <Content innerRef={(comp) => { this.Content = comp; }} className="content-comp">
           <ImgWrapper>
             <img style={{
               width: '100%',

@@ -63,6 +63,10 @@ const CopyWrapper = styled.div`
 
 const SubCopy = P.extend`
   margin: 1em 0 1em 0;
+
+  @media(min-width:768px) {
+    margin: 0em 0 1em 0; 
+  }
 `;
 
 const Social = styled.div`
