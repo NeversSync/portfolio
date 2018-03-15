@@ -54,12 +54,14 @@ const Project = styled.div`
 `;
 
 const Header = H3.extend`
+  color: hsl(187, 40%, 2%);
   text-align: center;
   font-weight: 600;
   margin: 2px;
 `;
 
 const SubHeader = styled.h3`
+  color: hsl(187, 40%, 2%);
   text-align: center;
   font-size: .85em;
   font-weight: 300;
