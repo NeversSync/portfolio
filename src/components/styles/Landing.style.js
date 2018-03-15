@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-// const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_1412/v1519770562/aerial-forest-hero-img.jpg';  
+import styled, { keyframes } from 'styled-components';
 const heroImgUrl = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_1412/v1519770562/Portfolio/aerial-forest-hero-img.jpg';  
 
 const Wrapper = styled.div`
@@ -43,11 +42,27 @@ const SubTitle = styled.h2`
   }
 `;
 
+const arrowBounce = keyframes`
+    0%, 20%, 50%, 80%, 100% {
+    transform:translateY(0);
+  }
+  40% {
+    transform:translateY(-30px);
+  }
+  60% {
+    transform:translateY(-15px);
+  }
+`;
+
 const ArrowWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   max-height: 100px;
+  animation: ${arrowBounce} 2s;
+  animation-delay: 400ms;
+  animation-iteration-count: 2;
 `;
+
 
 export { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper };
