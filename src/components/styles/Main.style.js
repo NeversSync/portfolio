@@ -9,8 +9,12 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-  background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12%);
+  background: white;
   position: relative;
+  
+  @media(min-width: 768px) {
+    /* background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%); */
+  }
 `;
 
 export { Wrapper, Content };

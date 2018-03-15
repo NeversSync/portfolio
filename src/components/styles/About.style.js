@@ -7,11 +7,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   color: black;
-  margin: 10% 6%;
+  margin: 8% 6%;
 
   @media(min-width: 768px) {
     min-height: 650px;
-    margin: 3% 13%;
+    margin: 10% 13%;
   }
 `;
 
@@ -25,7 +25,11 @@ const HeaderWrapper = styled.div`
 
 const Header = H2.extend`
   text-align: center;
-  margin-top: 250px;
+  margin-top: 75px;
+  
+  @media(min-width: 768px) {
+    margin-top: 150px;
+  }
 `;
 
 const SubHeader = H3.extend`
@@ -55,7 +59,7 @@ const ImgWrapper = styled.div`
 `;
 
 const CopyWrapper = styled.div`
-  margin: 0px 5px;
+  margin: 0px 5px 50px 5px;
 
   @media(min-width:768px) {
     margin: 0px 20px;  

@@ -48,9 +48,10 @@ a {
 .header-title, .content-comp {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 2s ease-out;
+  transition: all 2000ms ease-out;
 }
-.header-title.fade-title-in, .content-comp.fade-title-in {
+
+.header-title.fade-title-in, .content-comp.fade-title-in, .project-comp.fade-project-in {
   opacity: 1;
   transform: translateY(0px);
 }

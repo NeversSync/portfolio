@@ -26,7 +26,7 @@ const Title = styled.div`
   background-color: hsla(187, 65%, 40%, .75);
 
   @media(min-width:768px) {
-    font-size; 2em;
+    font-size: 2em;
   }
 `;
 
@@ -34,7 +34,9 @@ const Project = styled.div`
   padding: 15px;
   padding-top: 5px;
   max-width: 400px;
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+  transition: background-color 0.5s cubic-bezier(.25,.8,.25,1), box-shadow 0.5s cubic-bezier(.25,.8,.25,1), opacity 2000ms ease-out, transform 2000ms ease-out;
+  opacity: 0;
+  transform: translateY(40px);
 
   @media(min-width:960px) {
     &:hover {
