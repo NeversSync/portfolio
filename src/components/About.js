@@ -4,7 +4,8 @@ import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWra
 import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
 import GithubIcon from 'react-icons/lib/fa/github-square';
 import EmailIcon from 'react-icons/lib/fa/envelope-square';
-const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/v1519772068/Portfolio/profile-img.jpg';
+// const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/v1519772068/Portfolio/profile-img.jpg';
+const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,w_1221/v1526599568/6-8.jpg';
 
 
 class About extends Component {
