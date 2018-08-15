@@ -6,13 +6,14 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10% 4%;
+  margin: 2% 4%;
+  color: hsla(187, 5%, 33%, 1);
 
   @media(min-width: 960px) {
     flex-direction: row;
     justify-content: space-evenly;
-    min-height: 450px;
-    margin: 2% 0;
+    min-height: 390px;
+    margin: .5% 0;
   }
 `;
 
@@ -24,6 +25,21 @@ const Title = styled.div`
   font-size: 2.2em;
   color: white;
   background-color: hsla(187, 65%, 40%, .75);
+
+  @media(min-width:768px) {
+    font-size: 2em;
+  }
+`;
+
+const ProjectSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 2.2em;
+  color: hsla(187, 5%, 33%, 1);
+  /* margin: 0 auto; */
+  margin: 50px 0px 0px 0px;
 
   @media(min-width:768px) {
     font-size: 2em;
@@ -58,10 +74,11 @@ const Header = H3.extend`
   text-align: center;
   font-weight: 600;
   margin: 2px;
+  color: hsla(187, 5%, 33%, 1);
 `;
 
 const SubHeader = styled.h3`
-  color: hsl(187, 40%, 2%);
+  color: hsla(187, 5%, 33%, 1);
   text-align: center;
   font-size: .85em;
   font-weight: 300;
@@ -79,4 +96,4 @@ const Img = styled.img`
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 `;
 
-export { Wrapper, Header, SubHeader, Img, Project, Title };
+export { Wrapper, Header, SubHeader, Img, Project, Title, ProjectSection };

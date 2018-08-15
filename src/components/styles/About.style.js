@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: hsl(187, 40%, 2%);
+  color: hsla(187, 5%, 33%, 1);
   margin: 8% 6%;
 
   @media(min-width: 768px) {
