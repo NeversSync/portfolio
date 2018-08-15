@@ -62,7 +62,7 @@ class About extends Component {
       <Wrapper id='about'>
         <HeaderWrapper innerRef={(comp) => { this.Header = comp; }} className="header-title">
           <Header >Hi, I'm Nicky.</Header>
-          <SubHeader>I'm a design driven Web Developer and I'm ready to work.</SubHeader>
+          <SubHeader>I'm a design driven Web Developer and I'm here to help.</SubHeader>
         </HeaderWrapper>
         <Content innerRef={(comp) => { this.Content = comp; }} className="content-comp">
           <ImgWrapper>
@@ -72,9 +72,14 @@ class About extends Component {
             }} src={profileImg} alt='' />
           </ImgWrapper>
           <CopyWrapper>
-            <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan.
-          </SubCopy>
-            <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently available for full-time employment while working as a freelancer in Portland, Oregon.</SubCopy>
+            <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force  in everything I do, from designing the perfect landing page, to juggling, to sourcing tea from Taiwan.
+            </SubCopy>
+            <SubCopy>I care about creating clean, effective websites for people and businesses. I love the feeling of helping clients transform their ideas into a home on the web that is easy to use and inspiring. I'm currently working as a freelancer in beautiful Portland, Oregon.
+            </SubCopy>
+            {/* <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan.
+            </SubCopy>
+            <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently available for full-time employment while working as a freelancer in Portland, Oregon.
+            </SubCopy> */}
             <Social>
               <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon 
               color={this.state.email} size={this.state.emailSize} 
