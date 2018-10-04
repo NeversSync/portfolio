@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import ScrollMagic from 'scrollmagic';
+
 import { Wrapper, Header, SubHeader, Project, Img, Title, ProjectSection } from './styles/Projects.style';
 const tableauImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/dpr_auto,f_auto,q_auto:good/v1519772075/Portfolio/tableau-screen-shot.png';
 const gongFuImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/s--OqiFZzIy--/dpr_auto,f_auto,q_jpegmini/v1519772080/Portfolio/gong-fu-tea-screenshot.png';
-const EnterpriseImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,h_1576,w_2840/v1534317157/Screen_Shot_2018-08-15_at_12.07.58_AM.png';
-const ProplogicImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,h_1576,w_2840/v1534317156/Screen_Shot_2018-08-15_at_12.09.58_AM.png';
+const EnterpriseImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--s_8o_MU3--/f_auto,q_jpegmini/v1534317157/ENTERPRISE/Screen_Shot_2018-08-15_at_12.07.58_AM.png';
+const ProplogicImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--XeJPGpiG--/f_auto,q_jpegmini/v1534317155/PROP-LOGIC/Screen_Shot_2018-08-15_at_12.08.46_AM.png';
 
 
 class Projects extends Component {
