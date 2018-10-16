@@ -33,7 +33,7 @@ class Projects extends Component {
         <Wrapper>
           <Project
             innerRef={comp => { this.PascaleProject = comp; }} className='project-comp'>
-            <a href="/https://www.pascalevermont.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.pascalevermont.com/" target="_blank" rel="noopener noreferrer">
               <Header>Pascale Vermont</Header>
               <SubHeader>ReactJS, GatsbyJS, Mobile-first, Styled Components</SubHeader>
               <Img src={PascaleImg} alt=''></Img>
