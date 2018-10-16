@@ -11,7 +11,7 @@ const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_sc
 class About extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       email: 'hsla(0, 0%, 37%, 1)',
       emailSize: 50,
@@ -20,11 +20,11 @@ class About extends Component {
       linkedIn: 'hsla(0, 0%, 37%, 1)',
       linkedInSize: 50
     };
-    
+
     this.toggleEmailHover = this.toggleEmailHover.bind(this);
     this.toggleGithubHover = this.toggleGithubHover.bind(this);
     this.toggleLinkedInHover = this.toggleLinkedInHover.bind(this);
-    
+
   }
   componentDidMount() {
     // Header and Content scroll animations
@@ -32,37 +32,37 @@ class About extends Component {
     const animatedComponents = [this.Header, this.Content];
     animatedComponents.forEach(comp => {
       new ScrollMagic.Scene({
-        triggerElement:comp,
+        triggerElement: comp,
         triggerHook: .9,
         reverse: false
       })
-      .setClassToggle(comp, 'fade-title-in')
-      .addTo(controller);
+        .setClassToggle(comp, 'fade-title-in')
+        .addTo(controller);
     });
   }
-  
+
   toggleEmailHover() {
     this.state.email === 'hsla(0, 0%, 37%, 1)' ? (this.setState({ email: 'hsla(187, 55%, 50%, 1)' })) : (this.setState({ email: 'hsla(0, 0%, 37%, 1)' }));
     this.state.emailSize === 50 ? (this.setState({ emailSize: 45 })) : this.setState({ emailSize: 50 });
   }
-  
+
   toggleGithubHover() {
     this.state.github === 'hsla(0, 0%, 37%, 1)' ? (this.setState({ github: 'hsla(187, 55%, 50%, 1)' })) : (this.setState({ github: 'hsla(0, 0%, 37%, 1)' }));
     this.state.githubSize === 50 ? (this.setState({ githubSize: 45 })) : this.setState({ githubSize: 50 });
   }
-  
+
   toggleLinkedInHover() {
     this.state.linkedIn === 'hsla(0, 0%, 37%, 1)' ? (this.setState({ linkedIn: 'hsla(187, 55%, 50%, 1)' })) : (this.setState({ linkedIn: 'hsla(0, 0%, 37%, 1)' }));
     this.state.linkedInSize === 50 ? (this.setState({ linkedInSize: 45 })) : this.setState({ linkedInSize: 50 });
   }
-  
+
 
   render() {
     return (
       <Wrapper id='about'>
         <HeaderWrapper innerRef={(comp) => { this.Header = comp; }} className="header-title">
           <Header >Hi, I'm Nicky.</Header>
-          <SubHeader>I'm a design driven Web Developer and I'm here to help.</SubHeader>
+          <SubHeader>I'm a design driven Web Developer and Designer and I'm here to help.</SubHeader>
         </HeaderWrapper>
         <Content innerRef={(comp) => { this.Content = comp; }} className="content-comp">
           <ImgWrapper>
@@ -72,26 +72,26 @@ class About extends Component {
             }} src={profileImg} alt='' />
           </ImgWrapper>
           <CopyWrapper>
-            <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force  in everything I do, from designing the perfect landing page, to juggling, to sourcing tea from Taiwan.
+            <SubCopy>My passion for learning combined with my love for elegance is a tremendous driving force in everything I do, from designing the perfect landing page, to writing code, to juggling or sourcing tea from Taiwan.
             </SubCopy>
-            <SubCopy>I care about creating clean, effective websites for people and businesses. I love the feeling of helping clients transform their ideas into a home on the web that is easy to use and inspiring. I'm currently working as a freelancer in beautiful Portland, Oregon.
+            <SubCopy>I care about creating clean, effective websites and designs for people and businesses. I love the feeling of helping clients transform their ideas into a home on the web that is easy to use and inspiring. I'm currently working as a freelancer in beautiful Portland, Oregon.
             </SubCopy>
             {/* <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan.
             </SubCopy>
             <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently available for full-time employment while working as a freelancer in Portland, Oregon.
             </SubCopy> */}
             <Social>
-              <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon 
-              color={this.state.email} size={this.state.emailSize} 
-              onMouseEnter={this.toggleEmailHover} onMouseLeave={this.toggleEmailHover}
-              style={{ transition: '.3s ease'}} /></SocialIcon>
-              <SocialIcon href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><GithubIcon 
-              color={this.state.github} size={this.state.githubSize} 
-              onMouseEnter={this.toggleGithubHover} onMouseLeave={this.toggleGithubHover}
-              style={{ transition: '.3s ease'}}/></SocialIcon>
-              <SocialIcon href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon 
-              color={this.state.linkedIn} size={this.state.linkedInSize} onMouseEnter={this.toggleLinkedInHover} onMouseLeave={this.toggleLinkedInHover} 
-              style={{ transition: '.3s ease'}}/></SocialIcon>
+              <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon
+                color={this.state.email} size={this.state.emailSize}
+                onMouseEnter={this.toggleEmailHover} onMouseLeave={this.toggleEmailHover}
+                style={{ transition: '.3s ease' }} /></SocialIcon>
+              <SocialIcon href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><GithubIcon
+                color={this.state.github} size={this.state.githubSize}
+                onMouseEnter={this.toggleGithubHover} onMouseLeave={this.toggleGithubHover}
+                style={{ transition: '.3s ease' }} /></SocialIcon>
+              <SocialIcon href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon
+                color={this.state.linkedIn} size={this.state.linkedInSize} onMouseEnter={this.toggleLinkedInHover} onMouseLeave={this.toggleLinkedInHover}
+                style={{ transition: '.3s ease' }} /></SocialIcon>
             </Social>
           </CopyWrapper>
         </Content>

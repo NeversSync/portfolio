@@ -45,6 +45,7 @@ const Button = styled.button`
   font-family: 'Raleway', sans-serif;
   width: 200px;
   height: 57px;
+  border-radius: 8px;
   font-size: 1em; 
   padding: 6px 0px;
   margin-bottom: 15px;

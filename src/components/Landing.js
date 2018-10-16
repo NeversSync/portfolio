@@ -70,7 +70,7 @@ class Landing extends Component {
                 transitionAppearTimeout={1500}
                 transitionEnter={false}
                 transitionLeave={false}>
-                <SubTitle key={'subtitle'}>Web Developer</SubTitle>
+                <SubTitle key={'subtitle'}>Web Developer | Designer</SubTitle>
               </ReactCSSTransitionGroup>
               <ReactCSSTransitionGroup
                 transitionName='fadeup-in'
