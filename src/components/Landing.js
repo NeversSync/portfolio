@@ -37,21 +37,10 @@ class Landing extends Component {
       .addTo(controller);
   }
 
-  // TODO:
-  // Which lifecycle method to find out size of screen in
-
-
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
     if (this.state.width >= 768) this.setState({ isMobile: false });
   };
-
-  // resize = () => {
-  //   console.log('resized', window.innerWidth);
-  //   if (window.innerWidth >= 760) {
-  //     this.setState({ isMobile: false });
-  //   }
-  // };
 
   hoverToggle() {
     this.state.color === 'hsla(187, 55%, 50%, 1)' ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' }) : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
