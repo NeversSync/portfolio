@@ -4,10 +4,10 @@ import ScrollMagic from 'scrollmagic';
 import { Wrapper, Header, SubHeader, Project, Img, Title, ProjectSection } from './styles/Projects.style';
 const tableauImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/dpr_auto,f_auto,q_auto:good/v1519772075/Portfolio/tableau-screen-shot.png';
 const gongFuImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/s--OqiFZzIy--/dpr_auto,f_auto,q_jpegmini/v1519772080/Portfolio/gong-fu-tea-screenshot.png';
-const EnterpriseImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--QJMWpDpn--/f_auto,q_jpegmini/v1549567302/Portfolio/enterprise-screenshot.png';
+const EnterpriseImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--CmYI1J_B--/f_auto,q_jpegmini/v1549568086/Portfolio/enterprise-screenshot.png';
 const ProplogicImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--XeJPGpiG--/f_auto,q_jpegmini/v1534317155/PROP-LOGIC/Screen_Shot_2018-08-15_at_12.08.46_AM.png';
 const PascaleImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1539649113/Portfolio/pascale-vermont-site-screenshot.png';
-const DoodleImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--arqDjl4m--/f_auto,q_jpegmini/v1549500685/Portfolio/doodle-grip-screenshot.png';
+const DoodleImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--6Yx3USEt--/f_auto,q_jpegmini/v1549568085/Portfolio/doodlegrip-screenshot.png';
 
 
 class Projects extends Component {
