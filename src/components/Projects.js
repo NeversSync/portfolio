@@ -7,13 +7,14 @@ const gongFuImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/s--Oq
 const EnterpriseImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--s_8o_MU3--/f_auto,q_jpegmini/v1534317157/ENTERPRISE/Screen_Shot_2018-08-15_at_12.07.58_AM.png';
 const ProplogicImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--XeJPGpiG--/f_auto,q_jpegmini/v1534317155/PROP-LOGIC/Screen_Shot_2018-08-15_at_12.08.46_AM.png';
 const PascaleImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1539649113/Portfolio/pascale-vermont-site-screenshot.png';
+const DoodleImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/q_auto/v1549500685/doodle-grip-screenshot.png';
 
 
 class Projects extends Component {
 
   componentDidMount() {
     const controller = new ScrollMagic.Controller();
-    const animatedProjectComponents = [this.GongFuProject, this.TableauProject, this.PascaleProject, this.EnterpriseProject, this.ProplogicProject];
+    const animatedProjectComponents = [this.GongFuProject, this.TableauProject, this.PascaleProject, this.EnterpriseProject, this.ProplogicProject, this.DoodleProject];
     animatedProjectComponents.forEach(comp => {
       new ScrollMagic.Scene({
         triggerElement: comp,
@@ -62,8 +63,16 @@ class Projects extends Component {
             innerRef={comp => { this.EnterpriseProject = comp; }} className='project-comp'>
             <a href="http://enterpriseforyouth.org/" target="_blank" rel="noopener noreferrer">
               <Header>Enterprise For Youth</Header>
-              <SubHeader>Wordpress</SubHeader>
+              <SubHeader>Mobile-first, Wordpress</SubHeader>
               <Img src={EnterpriseImg} alt=''></Img>
+            </a>
+          </Project>
+          <Project
+            innerRef={comp => { this.DoodleProject = comp; }} className='project-comp'>
+            <a href="https://www.doodlegrip.com/" target="_blank" rel="noopener noreferrer">
+              <Header>DoodleGrip®</Header>
+              <SubHeader>Mobile-first, Wordpress</SubHeader>
+              <Img src={DoodleImg} alt=''></Img>
             </a>
           </Project>
           <Project
