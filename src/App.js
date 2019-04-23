@@ -12,11 +12,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App" style={{width: '100%'}}>
-            <Switch>
-              <Route exact path='/' render={() => <Main />} />
-              <Redirect to='/' />
-            </Switch>
+        <div className="App" style={{ width: '100%' }}>
+          <Switch>
+            <Route exact path='/' render={() => <Main />} />
+            <Redirect to='/' />
+          </Switch>
         </div>
       </Router>
     );
