@@ -3,16 +3,18 @@ import { H3 } from './Utilities.style';
 
 const Wrapper = styled.div`
   font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 600px));
+  grid-template-rows: 350px 350px;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 1em;
   margin: 2% 4%;
   color: hsla(187, 5%, 33%, 1);
+  align-items: center;
+
 
   @media(min-width: 960px) {
-    flex-direction: row;
-    justify-content: space-evenly;
-    min-height: 390px;
     margin: .5% 0;
   }
 `;
@@ -38,7 +40,6 @@ const ProjectSection = styled.div`
   height: 60px;
   font-size: 2.2em;
   color: hsla(187, 5%, 33%, 1);
-  /* margin: 0 auto; */
   margin: 50px 0px 0px 0px;
 
   @media(min-width:768px) {
@@ -47,6 +48,8 @@ const ProjectSection = styled.div`
 `;
 
 const Project = styled.div`
+  display: grid;
+  height: auto;
   padding: 15px;
   padding-top: 5px;
   max-width: 400px;
