@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import * as ScrollMagic from 'scrollmagic';
 import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social, SocialIcon } from './styles/About.style';
-import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
-import GithubIcon from 'react-icons/lib/fa/github-square';
-import EmailIcon from 'react-icons/lib/fa/envelope-square';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 // const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/v1519772068/Portfolio/profile-img.jpg';
 const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,w_1221/v1526599568/6-8.jpg';
 
@@ -60,11 +60,11 @@ class About extends Component {
   render() {
     return (
       <Wrapper id='about'>
-        <HeaderWrapper innerRef={(comp) => { this.Header = comp; }} className="header-title">
+        <HeaderWrapper ref={(comp) => { this.Header = comp; }} className="header-title">
           <Header >Hi, I'm Nicky.</Header>
           <SubHeader>I'm a design driven Web Developer and Designer and I'm here to help.</SubHeader>
         </HeaderWrapper>
-        <Content innerRef={(comp) => { this.Content = comp; }} className="content-comp">
+        <Content ref={(comp) => { this.Content = comp; }} className="content-comp">
           <ImgWrapper>
             <img style={{
               width: '100%',
@@ -81,15 +81,15 @@ class About extends Component {
             <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently available for full-time employment while working as a freelancer in Portland, Oregon.
             </SubCopy> */}
             <Social>
-              <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon
+              <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><FaEnvelope
                 color={this.state.email} size={this.state.emailSize}
                 onMouseEnter={this.toggleEmailHover} onMouseLeave={this.toggleEmailHover}
                 style={{ transition: '.3s ease' }} /></SocialIcon>
-              <SocialIcon href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><GithubIcon
+              <SocialIcon href="https://github.com/NeversSync" target="_blank" rel="noopener noreferrer"><FaGithubSquare
                 color={this.state.github} size={this.state.githubSize}
                 onMouseEnter={this.toggleGithubHover} onMouseLeave={this.toggleGithubHover}
                 style={{ transition: '.3s ease' }} /></SocialIcon>
-              <SocialIcon href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><LinkedInIcon
+              <SocialIcon href="https://www.linkedin.com/in/nicky-evers/" target="_blank" rel="noopener noreferrer"><FaLinkedin
                 color={this.state.linkedIn} size={this.state.linkedInSize} onMouseEnter={this.toggleLinkedInHover} onMouseLeave={this.toggleLinkedInHover}
                 style={{ transition: '.3s ease' }} /></SocialIcon>
             </Social>

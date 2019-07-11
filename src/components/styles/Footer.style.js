@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
 font-family: 'Raleway', sans-serif;
-background-color: hsla(0, 0%, 55%, 0.6); 
+background-color: hsla(0, 0%, 55%, 0.6);
 color: white;
 min-height: 250px;
 padding-top: 2%;
@@ -31,7 +31,7 @@ const ButtonWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
-  
+
   @media(min-width: 768px) {
     flex-direction: row;
     margin-top: 0;
@@ -41,12 +41,12 @@ const ButtonWrapper = styled.div`
 const Button = styled.button`
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   font-family: 'Raleway', sans-serif;
   width: 200px;
   height: 57px;
   border-radius: 8px;
-  font-size: 1em; 
+  font-size: 1em;
   padding: 6px 0px;
   margin-bottom: 15px;
   background: linear-gradient(hsla(187, 65%, 55%, 1), hsla(187, 65%, 40%, 1));
@@ -96,11 +96,11 @@ const Copy = styled.p`
   }
 `;
 
-const Copyright = Copy.extend`
+const Copyright = styled(Copy)`
   text-align: center;
   font-size: .8em;
   margin: 50px 0 0 0;
-  
+
   @media(min-width:768px) {
     margin: 70px 0 0 0;
     font-size: .9em;

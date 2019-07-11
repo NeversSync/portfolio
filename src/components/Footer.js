@@ -1,7 +1,7 @@
 import React from 'react';
 import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
 import ResumeIcon from 'react-material-icons/icons/action/description';
-import EmailIcon from 'react-icons/lib/fa/envelope-square';
+import { FaEnvelope } from 'react-icons/fa';
 import { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction } from './styles/Footer.style';
 
 function Footer() {
@@ -13,7 +13,7 @@ function Footer() {
           <Button>
             <a href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer">
               <LabelWrapper>
-                <EmailIcon
+                <FaEnvelope
                   color={'white'}
                   style={{ margin: '0px 9px 0px 0px', fontSize: '29px' }} />
                 <p>CONTACT ME</p>

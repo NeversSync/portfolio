@@ -34,7 +34,7 @@ class Projects extends Component {
         <ProjectSection>ReactJS Projects</ProjectSection>
         <Wrapper>
           <Project
-            innerRef={comp => { this.PascaleProject = comp; }} className='project-comp'>
+            ref={comp => { this.PascaleProject = comp; }} className='project-comp'>
             <a href="https://www.pascalevermont.com/" target="_blank" rel="noopener noreferrer">
               <Header>Pascale Vermont</Header>
               <SubHeader>ReactJS, GatsbyJS,<br/>Mobile-first, Styled Components</SubHeader>
@@ -43,7 +43,7 @@ class Projects extends Component {
           </Project>
 
           <Project
-            innerRef={comp => { this.TableauProject = comp; }} className='project-comp'>
+            ref={comp => { this.TableauProject = comp; }} className='project-comp'>
             <a href="https://the-tableau-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Header>Tableau</Header>
               <SubHeader>ReactJS/Redux, NodeJS, ExpressJS, AWS S3, MongoDB, Mongoose, Heroku, Mlab</SubHeader>
@@ -52,7 +52,7 @@ class Projects extends Component {
           </Project>
 
           <Project
-            innerRef={comp => { this.JoeMyGoodnessProject = comp; }} className='project-comp'>
+            ref={comp => { this.JoeMyGoodnessProject = comp; }} className='project-comp'>
             <a href="https://djjoemygoodness.com/" target="_blank" rel="noopener noreferrer">
               <Header>DJ Joe My Goodness</Header>
               <SubHeader>ReactJS, GatsbyJS, <br/>Styled Components, Mobile-first</SubHeader>
@@ -61,7 +61,7 @@ class Projects extends Component {
           </Project>
 
           <Project
-            innerRef={comp => { this.GongFuProject = comp; }} className='project-comp'>
+            ref={comp => { this.GongFuProject = comp; }} className='project-comp'>
             <a href="https://gongfucha.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Header>Gong Fu Tea</Header>
               <SubHeader>Mobile-first, NodeJS, ExpressJS, Google Maps API, PostgreSQL, MongoDB, Mongoose, TDD, Jquery, Heroku</SubHeader>
@@ -72,7 +72,7 @@ class Projects extends Component {
         <ProjectSection>Wordpress Sites</ProjectSection>
         <Wrapper>
           <Project
-            innerRef={comp => { this.EnterpriseProject = comp; }} className='project-comp'>
+            ref={comp => { this.EnterpriseProject = comp; }} className='project-comp'>
             <a href="http://enterpriseforyouth.org/" target="_blank" rel="noopener noreferrer">
               <Header>Enterprise For Youth</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
@@ -81,7 +81,7 @@ class Projects extends Component {
           </Project>
 
           <Project
-            innerRef={comp => { this.LangmoreFeesProject = comp; }} className='project-comp'>
+            ref={comp => { this.LangmoreFeesProject = comp; }} className='project-comp'>
             <a href="http://langmorefees.com/" target="_blank" rel="noopener noreferrer">
               <Header>LangmoreFEES</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
@@ -90,7 +90,7 @@ class Projects extends Component {
           </Project>
 
           <Project
-            innerRef={comp => { this.DoodleProject = comp; }} className='project-comp'>
+            ref={comp => { this.DoodleProject = comp; }} className='project-comp'>
             <a href="https://www.doodlegrip.com/" target="_blank" rel="noopener noreferrer">
               <Header>DoodleGrip®</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
@@ -98,7 +98,7 @@ class Projects extends Component {
             </a>
           </Project>
           <Project
-            innerRef={comp => { this.ProplogicProject = comp; }} className='project-comp'>
+            ref={comp => { this.ProplogicProject = comp; }} className='project-comp'>
             <a href="http://proplogic.studio/" target="_blank" rel="noopener noreferrer">
               <Header>Prop Logic Studio</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>

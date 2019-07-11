@@ -72,7 +72,7 @@ const Project = styled.div`
   }
 `;
 
-const Header = H3.extend`
+const Header = styled(H3)`
   color: hsl(187, 40%, 2%);
   text-align: center;
   font-weight: 600;

@@ -54,14 +54,14 @@ class Landing extends Component {
   render() {
 
     return (
-      <Wrapper innerRef={(comp) => { this.Wrapper = comp; }}>
+      <Wrapper ref={(comp) => { this.Wrapper = comp; }}>
         <ReactCSSTransitionGroup
           transitionName='fadein'
           transitionAppear={true}
           transitionAppearTimeout={1200}
           transitionEnter={false}
           transitionLeave={false}>
-          <Background className="background" innerRef={(comp) => { this.Background = comp; }} key={'background'}>
+          <Background className="background" ref={(comp) => { this.Background = comp; }} key={'background'}>
 
             <Header>
               <ReactCSSTransitionGroup

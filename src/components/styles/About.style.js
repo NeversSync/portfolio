@@ -23,16 +23,16 @@ const HeaderWrapper = styled.div`
   }
 `;
 
-const Header = H2.extend`
+const Header = styled(H2)`
   text-align: center;
   margin-top: 75px;
-  
+
   @media(min-width: 768px) {
     margin-top: 150px;
   }
 `;
 
-const SubHeader = H3.extend`
+const SubHeader = styled(H3)`
 text-align: center;
 `;
 
@@ -62,15 +62,15 @@ const CopyWrapper = styled.div`
   margin: 0px 5px 50px 5px;
 
   @media(min-width:768px) {
-    margin: 0px 20px;  
+    margin: 0px 20px;
   }
 `;
 
-const SubCopy = P.extend`
+const SubCopy = styled(P)`
   margin: 1em 0 1em 0;
 
   @media(min-width:768px) {
-    margin: 0em 0 1em 0; 
+    margin: 0em 0 1em 0;
   }
 `;
 
