@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ScrollMagic from 'scrollmagic';
 
 import { Wrapper, Header, SubHeader, Project, Img, Title, ProjectSection } from './styles/Projects.style';
-const tableauImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/dpr_auto,f_auto,q_auto:good/v1519772075/Portfolio/tableau-screen-shot.png';
+const tableauImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/dpr_auto,f_auto,q_auto:good/v1519772075/Portfolio/tableau-screen-shot.png';
 const joeImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--bTHG76If--/f_auto,q_jpegmini/v1562789893/Portfolio/joemygoodness.com-screenshot.png';
-const gongFuImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/s--OqiFZzIy--/dpr_auto,f_auto,q_jpegmini/v1519772080/Portfolio/gong-fu-tea-screenshot.png';
+const gongFuImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--OqiFZzIy--/dpr_auto,f_auto,q_jpegmini/v1519772080/Portfolio/gong-fu-tea-screenshot.png';
 const EnterpriseImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--CmYI1J_B--/f_auto,q_jpegmini/v1549568086/Portfolio/enterprise-screenshot.png';
 const LangmoreFeesImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--O-SfcUf7--/f_auto,q_jpegmini/v1562789892/Portfolio/langmorefees.com-screenshot.png';
 const ProplogicImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--XeJPGpiG--/f_auto,q_jpegmini/v1534317155/PROP-LOGIC/Screen_Shot_2018-08-15_at_12.08.46_AM.png';
