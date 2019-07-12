@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const FooterWrapper = styled.div`
 font-family: 'Raleway', sans-serif;
-background-color: hsla(0, 0%, 55%, 0.6);
-color: white;
-min-height: 250px;
-padding-top: 2%;
-display: flex;
-justify-content: space-evenly;
-flex-direction: column;
+padding-top: 5%;
+display: grid;
+grid-row: 4 / 5;
+grid-column: 1 / -1;
+grid-gap: 1em;
+
+@media (min-width: 1200px) {
+  grid-gap: 3em;
+  }
 `;
 
 const CallToAction = styled.div`
@@ -18,11 +20,6 @@ const CallToAction = styled.div`
   flex-direction: column;
   min-width: 175px;
   min-height: 60px;
-  margin-top: 20px;
-
-  @media(min-width: 768px) {
-    flex-direction: row;
-  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -99,12 +96,13 @@ const Copy = styled.p`
 const Copyright = styled(Copy)`
   text-align: center;
   font-size: .8em;
-  margin: 50px 0 0 0;
+  color: hsla(187, 5%, 33%, 1);
+  /* margin: 1em 0 0 0; */
 
   @media(min-width:768px) {
-    margin: 70px 0 0 0;
+    /* margin: 70px 0 0 0; */
     font-size: .9em;
   }
 `;
 
-export { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction };
+export { FooterWrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction };

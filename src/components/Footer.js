@@ -2,15 +2,14 @@ import React from 'react';
 import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
 import ResumeIcon from 'react-material-icons/icons/action/description';
 import { FaEnvelope } from 'react-icons/fa';
-import { Wrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction } from './styles/Footer.style';
+import { FooterWrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction } from './styles/Footer.style';
 
 function Footer() {
   return (
-    <Wrapper>
+    <FooterWrapper>
       <CallToAction>
-        <Copy>Hiring? Need help on a project? Lets talk.</Copy>
         <ButtonWrapper>
-          <Button>
+          {/* <Button>
             <a href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer">
               <LabelWrapper>
                 <FaEnvelope
@@ -18,7 +17,7 @@ function Footer() {
                   style={{ margin: '0px 9px 0px 0px', fontSize: '29px' }} />
                 <p>CONTACT ME</p>
               </LabelWrapper></a>
-          </Button>
+          </Button> */}
           <Button>
             <a href={resumeLink} target="_blank" rel="noopener noreferrer">
               <LabelWrapper>
@@ -32,7 +31,7 @@ function Footer() {
       <Copyright>This site built with ReactJS <br />
         &copy; Nicky Evers Design
       </Copyright>
-    </Wrapper>
+    </FooterWrapper>
   );
 }
 
