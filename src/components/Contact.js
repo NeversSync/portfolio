@@ -20,9 +20,11 @@ const Contact = () => (
     </ContactTitle>
     <ContactCard>
       <ContactForm
+        netlify
         netlify='true'
         data-netlify='true'
         method='POST'
+        netlify-honeypot='bot-field'
         data-netlify-honeypot='bot-field'
         name='contact-form-portfolio'
       >
