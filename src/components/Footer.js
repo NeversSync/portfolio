@@ -3,6 +3,7 @@ import resumeLink from '../assets/Nicky-Evers-Tech-Resume.pdf';
 import ResumeIcon from 'react-material-icons/icons/action/description';
 import { FaEnvelope } from 'react-icons/fa';
 import { FooterWrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction } from './styles/Footer.style';
+import { UpArrow } from '../components/styles/Helpers';
 
 function Footer() {
   return (
@@ -31,6 +32,7 @@ function Footer() {
       <Copyright>This site built with ReactJS <br />
         &copy; Nicky Evers Design
       </Copyright>
+      <UpArrow/>
     </FooterWrapper>
   );
 }
