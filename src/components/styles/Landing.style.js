@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
-const heroImgUrl = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_1412/v1519770562/Portfolio/aerial-forest-hero-img.jpg';  
+const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_1412/v1519770562/Portfolio/aerial-forest-hero-img.jpg';
 
 const Wrapper = styled.div`
-color: white; 
+color: white;
 `;
 
 const Background = styled.div`
@@ -25,7 +25,7 @@ font-size: 6.5vw;
 
 const Title = styled.h1`
 margin: 30px;
-font-size: 1.8em; 
+font-size: 1.8em;
 font-weight: 400;
 
   @media(min-width: 768px) {

@@ -73,7 +73,7 @@ class Projects extends Component {
         <Wrapper>
           <Project
             ref={comp => { this.EnterpriseProject = comp; }} className='project-comp'>
-            <a href="http://enterpriseforyouth.org/" target="_blank" rel="noopener noreferrer">
+            <a href="https://enterpriseforyouth.org/" target="_blank" rel="noopener noreferrer">
               <Header>Enterprise For Youth</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
               <Img src={EnterpriseImg} alt=''></Img>
@@ -82,7 +82,7 @@ class Projects extends Component {
 
           <Project
             ref={comp => { this.LangmoreFeesProject = comp; }} className='project-comp'>
-            <a href="http://langmorefees.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://langmorefees.com/" target="_blank" rel="noopener noreferrer">
               <Header>LangmoreFEES</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
               <Img src={LangmoreFeesImg} alt=''></Img>
@@ -99,7 +99,7 @@ class Projects extends Component {
           </Project>
           <Project
             ref={comp => { this.ProplogicProject = comp; }} className='project-comp'>
-            <a href="http://proplogic.studio/" target="_blank" rel="noopener noreferrer">
+            <a href="https://proplogic.studio/" target="_blank" rel="noopener noreferrer">
               <Header>Prop Logic Studio</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
               <Img src={ProplogicImg} alt=''></Img>

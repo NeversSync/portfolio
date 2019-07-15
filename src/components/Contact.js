@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Footer from './Footer';
 import {
   ContactWrapper,
@@ -10,18 +10,7 @@ import {
   RightHalfInputs,
   RightTextArea,
   LeftInput
-} from "./styles/Contact.styles";
-import resumeLink from "../assets/Nicky-Evers-Tech-Resume.pdf";
-import ResumeIcon from "react-material-icons/icons/action/description";
-import {
-  FooterWrapper,
-  Copy,
-  Copyright,
-  ButtonWrapper,
-  Button,
-  LabelWrapper,
-  CallToAction
-} from "./styles/Footer.style";
+} from './styles/Contact.styles';
 
 const Contact = () => (
   <ContactWrapper>
@@ -31,28 +20,28 @@ const Contact = () => (
     </ContactTitle>
     <ContactCard>
       <ContactForm
-        netlify="true"
-        data-netlify="true"
-        method="POST"
-        data-netlify-honeypot="bot-field"
-        name="contact-form-1"
+        netlify='true'
+        data-netlify='true'
+        method='POST'
+        data-netlify-honeypot='bot-field'
+        name='contact-form-portfolio'
       >
         <LeftHalfInputs>
-          <LeftInput name="name" type="text" placeholder="Name" />
-          <LeftInput name="email" type="email" placeholder="Email address" />
-          <LeftInput name="subject" type="text" placeholder="Subject" />
-          <input type="hidden" name="form-name" value="contact-form-1" />
+          <LeftInput name='name' type='text' placeholder='Name' />
+          <LeftInput name='email' type='email' placeholder='Email address' />
+          <LeftInput name='subject' type='text' placeholder='Subject' />
+          <input type='hidden' name='form-name' value='contact-form-1' />
         </LeftHalfInputs>
         <RightHalfInputs>
-          <RightTextArea name="message" type="text" placeholder="Message" />
+          <RightTextArea name='message' type='text' placeholder='Message' />
         </RightHalfInputs>
-        <div data-netlify-recaptcha="true" />
-        <SubmitButton type="submit" value="submit">
+        <div data-netlify-recaptcha='true' />
+        <SubmitButton type='submit' value='submit'>
           SUBMIT
         </SubmitButton>
       </ContactForm>
     </ContactCard>
-    <Footer/>
+    <Footer />
   </ContactWrapper>
 );
 
