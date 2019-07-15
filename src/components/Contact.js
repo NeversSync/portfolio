@@ -32,7 +32,7 @@ const Contact = () => (
           <LeftInput name='name' type='text' placeholder='Name' />
           <LeftInput name='email' type='email' placeholder='Email address' />
           <LeftInput name='subject' type='text' placeholder='Subject' />
-          <input type='hidden' name='form-name' value='contact-form-1' />
+          <input type='hidden' name='form-name' value='contact-form-portfolio' />
         </LeftHalfInputs>
         <RightHalfInputs>
           <RightTextArea name='message' type='text' placeholder='Message' />
