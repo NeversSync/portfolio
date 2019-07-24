@@ -11,10 +11,6 @@ if (typeof window !== 'undefined') {
   require('smooth-scroll')('a[href*="#"]');
 }
 
-if (typeof window !== `undefined`) {
-  // code using window like window.location...
-}
-
 const IndexPage = () => (
   <Layout>
     <div className='App' id='top'>
