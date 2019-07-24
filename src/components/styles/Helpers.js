@@ -151,13 +151,6 @@ const HomeButton = () => (
   </CTAButton>
 );
 
-// FOR 'index.js':
-// npm i smooth-scroll
-// if (typeof window !== 'undefined') {
-//   // eslint-disable-next-line global-require
-//   require('smooth-scroll')('a[href*="#"]');
-// }
-
 const UpArrow = () => (
   <a href="#" className='arrow up-button'>
     <svg className='up-arrow' style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
