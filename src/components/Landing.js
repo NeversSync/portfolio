@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import Scrollchor from 'react-scrollchor';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import * as ScrollMagic from 'scrollmagic';
 import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
-import { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper } from './styles/Landing.style';
+import {
+  Wrapper,
+  Background,
+  Header,
+  SubTitle,
+  Title,
+  ArrowWrapper
+} from './styles/Landing.style';
 
 class Landing extends Component {
   constructor(props) {
@@ -30,7 +36,7 @@ class Landing extends Component {
 
     new ScrollMagic.Scene({
       triggerElement: this.Wrapper,
-      triggerHook: 0,
+      triggerHook: 0
       // duration: this.state.width <= 768 ? '0%' : '0%'
     })
       .setPin(this.Background, { pushFollowers: false })
@@ -43,8 +49,12 @@ class Landing extends Component {
   };
 
   hoverToggle() {
-    this.state.color === 'hsla(187, 55%, 50%, 1)' ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' }) : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
-    this.state.size === '100px' ? this.setState({ size: '110px' }) : this.setState({ size: '100px' });
+    this.state.color === 'hsla(187, 55%, 50%, 1)'
+      ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' })
+      : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
+    this.state.size === '100px'
+      ? this.setState({ size: '110px' })
+      : this.setState({ size: '100px' });
   }
 
   componentWillUnmount() {
@@ -52,24 +62,34 @@ class Landing extends Component {
   }
 
   render() {
-
     return (
-      <Wrapper ref={(comp) => { this.Wrapper = comp; }}>
+      <Wrapper
+        ref={comp => {
+          this.Wrapper = comp;
+        }}
+      >
         <ReactCSSTransitionGroup
           transitionName='fadein'
           transitionAppear={true}
           transitionAppearTimeout={1200}
           transitionEnter={false}
-          transitionLeave={false}>
-          <Background className="background" ref={(comp) => { this.Background = comp; }} key={'background'}>
-
+          transitionLeave={false}
+        >
+          <Background
+            className='background'
+            ref={comp => {
+              this.Background = comp;
+            }}
+            key={'background'}
+          >
             <Header>
               <ReactCSSTransitionGroup
                 transitionName='fadedown-in'
                 transitionAppear={true}
                 transitionAppearTimeout={1500}
                 transitionEnter={false}
-                transitionLeave={false}>
+                transitionLeave={false}
+              >
                 <SubTitle key={'subtitle'}>Web Developer | Designer</SubTitle>
               </ReactCSSTransitionGroup>
               <ReactCSSTransitionGroup
@@ -77,24 +97,21 @@ class Landing extends Component {
                 transitionAppear={true}
                 transitionAppearTimeout={1500}
                 transitionEnter={false}
-                transitionLeave={false}>
+                transitionLeave={false}
+              >
                 <Title key={'title'}>Nicky Evers</Title>
               </ReactCSSTransitionGroup>
             </Header>
-            <ArrowWrapper>
-              <Scrollchor to="#about" animate={{ duration: 900 }}
+            <ArrowWrapper className="about-arrow" href='#about'>
+              <ArrowIcon
+                onMouseEnter={this.hoverToggle}
+                onMouseLeave={this.hoverToggle}
                 style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                }}>
-                <ArrowIcon
-                  onMouseEnter={this.hoverToggle} onMouseLeave={this.hoverToggle}
-                  style={{
-                    color: this.state.color,
-                    width: this.state.size,
-                    height: this.state.size
-                  }} />
-              </Scrollchor>
+                  color: this.state.color,
+                  width: this.state.size,
+                  height: this.state.size
+                }}
+              />
             </ArrowWrapper>
           </Background>
         </ReactCSSTransitionGroup>

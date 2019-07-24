@@ -22,7 +22,6 @@ const Contact = () => (
     <ContactCard>
       <ContactForm
         netlify
-        netlify='true'
         data-netlify='true'
         method='POST'
         netlify-honeypot='bot-field'
