@@ -27,7 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "homepage": "http://nickyevers.com/",
+  "homepage": "https://nickyevers.com/",
   "browserslist": {
     "production": [
       ">0.2%",
