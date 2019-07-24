@@ -38,7 +38,7 @@ const Contact = () => (
         <RightHalfInputs>
           <RightTextArea name='message' type='text' placeholder='Message' />
         </RightHalfInputs>
-        <div data-netlify-recaptcha='true' />
+        {/* <div data-netlify-recaptcha='true' /> */}
         <SubmitButton type='submit' value='submit'>
           SUBMIT
         </SubmitButton>
