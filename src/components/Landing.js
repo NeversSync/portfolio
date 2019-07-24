@@ -11,18 +11,18 @@ import {
   ArrowWrapper
 } from './styles/Landing.style';
 
+const windowGlobal = typeof window !== 'undefined' && window;
 class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
       color: 'hsla(187, 55%, 50%, 1)',
       size: '100px',
-      width: window.innerWidth,
+      width: props.windowSize,
       isMobile: true
     };
 
     this.hoverToggle = this.hoverToggle.bind(this);
-    // // this.resize = this.resize.bind(this);
     this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
   }
 
@@ -43,23 +43,23 @@ class Landing extends Component {
       .addTo(controller);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
   handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
+    this.setState({ width: windowGlobal.innerWidth + 'px' });
     if (this.state.width >= 768) this.setState({ isMobile: false });
   };
 
-  hoverToggle() {
+  hoverToggle = () => {
     this.state.color === 'hsla(187, 55%, 50%, 1)'
       ? this.setState({ color: 'hsla(187, 70%, 35%, 1)' })
       : this.setState({ color: 'hsla(187, 55%, 50%, 1)' });
     this.state.size === '100px'
       ? this.setState({ size: '110px' })
       : this.setState({ size: '100px' });
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
+  };
 
   render() {
     return (
@@ -102,7 +102,7 @@ class Landing extends Component {
                 <Title key={'title'}>Nicky Evers</Title>
               </ReactCSSTransitionGroup>
             </Header>
-            <ArrowWrapper className="about-arrow" href='#about'>
+            <ArrowWrapper className='about-arrow' href='#about'>
               <ArrowIcon
                 onMouseEnter={this.hoverToggle}
                 onMouseLeave={this.hoverToggle}
