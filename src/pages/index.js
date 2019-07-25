@@ -27,18 +27,3 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
-
-// function Main() {
-//   return (
-//     <Wrapper>
-//       <Landing />
-//       <Content>
-//         <About />
-//         <Projects />
-//         <Contact/>
-//       </Content>
-//     </Wrapper>
-//   );
-// }
-
-// export default Main;
