@@ -12,7 +12,6 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-// TODO: fix meta images
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

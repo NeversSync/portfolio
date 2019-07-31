@@ -12,17 +12,15 @@ if (typeof window !== 'undefined') {
 }
 
 const IndexPage = () => (
-  <Layout>
-    <div className='App' id='top'>
-      <MainWrapper>
-        <Landing />
-        <Content>
-          <About />
-          <Projects />
-          <Contact />
-        </Content>
-      </MainWrapper>
-    </div>
+  <Layout className='App' id='top'>
+    <MainWrapper>
+      <Landing />
+      <Content>
+        <About />
+        <Projects />
+        <Contact />
+      </Content>
+    </MainWrapper>
   </Layout>
 );
 
