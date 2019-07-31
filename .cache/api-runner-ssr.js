@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/PORTFOLIO/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-115875148-2","head":true},
+    },{
       plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/PORTFOLIO/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{

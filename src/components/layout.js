@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
               name: 'description',
               content: 'Nicky Evers Design, professional DJ and musician.'
             },
-            { name: 'og:image', content: 'https://nickyevers.com/nickyevers-screenshot.png' },
+            { name: 'og:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1563155765/Portfolio/nickyevers.com-screenshot.png' },
             { name: 'og:url', content: 'https://nickyevers.com/' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:url', content: 'https://nickyevers.com/' },
@@ -44,7 +44,7 @@ const Layout = ({ children }) => (
               name: 'twitter:description',
               content: 'Nicky Evers Design, Web Developer | Designer'
             },
-            { name: 'twitter:image', content: 'https://nickyevers.com/nickyevers-screenshot.png' }
+            { name: 'twitter:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1563155765/Portfolio/nickyevers.com-screenshot.png' }
           ]}
         />
         <MuiThemeProvider>
