@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const MainWrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   line-height: 1.7;
   font-family: 'Raleway', sans-serif;
 `;
@@ -14,7 +13,7 @@ const Content = styled.div`
   background: white;
   position: relative;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     /* background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%); */
   }
 `;
@@ -27,7 +26,7 @@ const Wrapper = styled.div`
 
 const Copy = styled.p`
   font-family: 'Rubik', sans-serif;
-  font-size: .6em;
+  font-size: 0.6em;
   line-height: 22px;
   letter-spacing: 1.5px;
   font-weight: 300;
@@ -35,7 +34,7 @@ const Copy = styled.p`
 
   @media (min-width: 900px) {
     letter-spacing: 1.75px;
-    font-size: .8em;
+    font-size: 0.8em;
     line-height: 26px;
   }
 `;
@@ -43,7 +42,7 @@ const Copy = styled.p`
 const Card = styled.div`
   box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
-  `;
+`;
 
 const ImageWrapper = styled(Card)`
   display: grid;
@@ -68,7 +67,7 @@ const Title = styled.h1`
 
 const SubTitle = styled.h3`
   font-family: 'rubik', sans-serif;
-  font-size: .9em;
+  font-size: 0.9em;
   letter-spacing: 4px;
   font-weight: 300;
 
@@ -89,95 +88,210 @@ const CTAButton = styled.button`
   align-items: center;
   width: 200px;
   height: 55px;
-  background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+  background: linear-gradient(
+    to left,
+    hsla(348, 86%, 59%, 0.9),
+    hsla(39, 100%, 63%, 0.9)
+  );
   border: none;
   border-radius: 7px;
-  border-bottom: 3px solid hsla(348, 2%, 10%, .5);
+  border-bottom: 3px solid hsla(348, 2%, 10%, 0.5);
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
-  transition: .3s ease;
+  transition: 0.3s ease;
   letter-spacing: 1.8px;
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
-    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    background: linear-gradient(
+      to left,
+      hsla(348, 96%, 69%, 0.9),
+      hsla(39, 100%, 63%, 0.9)
+    );
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   &:active {
-    background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
+    background: linear-gradient(
+      to left,
+      hsla(348, 86%, 49%, 0.9),
+      hsla(39, 90%, 43%, 0.9)
+    );
     -webkit-transform: translate(0px, 2px);
     transform: translate(0px, 2px);
     border-bottom: none;
     box-shadow: none;
   }
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     margin: 0;
     font-size: 16px;
     &:hover {
-      background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+      background: linear-gradient(
+        to left,
+        hsla(348, 86%, 59%, 0.9),
+        hsla(39, 100%, 63%, 0.9)
+      );
       box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
     }
   }
 `;
-
 
 const Spacer = styled.div`
   grid-column: 1 / -1;
   width: 100%;
   margin: 1%;
 
-   @media(max-width: 900px) {
-     display: none;
+  @media (max-width: 900px) {
+    display: none;
   }
 `;
 
 const Testimonial = styled.div`
-font-style: italic;
-font-size: 22px;
-font-weight: 200;
-line-height: 32px;
-letter-spacing: 1.55px;
-text-align: center;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: 1.55px;
+  text-align: center;
 
-@media (max-width: 1100px) {
+  @media (max-width: 1100px) {
     font-size: 18px;
   }
+`;
+
+const ArrowWrapper = styled.div`
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  width: 70px;
+  height: 70px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  align-self: center;
+  /* box-shadow: 0 10px 24px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.1); */
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: .3s ease;
+
+  @media(min-width: 768px) {
+  &:hover {
+      box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  }
+}
 `;
 
 // HELPER COMPONENTS
 
 const SVGArrowRight = () => (
-  <CTAButton className="arrow"><CTAButtonText>LEARN MORE</CTAButtonText>
-    <svg style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
-      <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+  <CTAButton className='arrow'>
+    <CTAButtonText>LEARN MORE</CTAButtonText>
+    <svg
+      style={{ width: '30px', height: '30px' }}
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 453.5 270'
+    >
+      <g id='Layer_2' data-name='Layer 2'>
+        <path
+          id='arrow-head'
+          fill='none'
+          stroke='#fff'
+          strokeWidth='20'
+          d='M318.5 10l125 125-125 125'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+        <path
+          id='arrow-body'
+          fill='white'
+          stroke='white'
+          strokeWidth=''
+          strokeMiterlimit='0'
+          d='M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z'
+        />
       </g>
     </svg>
   </CTAButton>
 );
 
 const HomeButton = () => (
-  <CTAButton className="arrow">
+  <CTAButton className='arrow'>
     <CTAButtonText>HOME</CTAButtonText>
-    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
-      <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+    <svg
+      className='svg-left-arrow'
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 453.5 270'
+    >
+      <g id='Layer_2' data-name='Layer 2'>
+        <path
+          id='arrow-head'
+          fill='none'
+          stroke='#fff'
+          strokeWidth='20'
+          d='M318.5 10l125 125-125 125'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+        <path
+          id='arrow-body'
+          fill='white'
+          stroke='white'
+          strokeWidth=''
+          strokeMiterlimit='0'
+          d='M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z'
+        />
       </g>
     </svg>
   </CTAButton>
 );
 
 const UpArrow = () => (
-  <a href="#" className='arrow up-button'>
-    <svg className='up-arrow' style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
-      <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#000" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="black" stroke="black" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
-      </g>
-    </svg>
-  </a>
+  <ArrowWrapper>
+    <a href='#' className='arrow up-button'>
+      <svg
+        className='up-arrow'
+        style={{ width: '30px', height: '30px' }}
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 453.5 270'
+      >
+        <g id='Layer_2' data-name='Layer 2'>
+          <path
+            id='arrow-head'
+            fill='none'
+            stroke='#000'
+            strokeWidth='20'
+            d='M318.5 10l125 125-125 125'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+          <path
+            id='arrow-body'
+            fill='black'
+            stroke='black'
+            strokeWidth=''
+            strokeMiterlimit='0'
+            d='M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z'
+          />
+        </g>
+      </svg>
+    </a>
+  </ArrowWrapper>
 );
 
-export { MainWrapper, Content, Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial, SVGArrowRight, HomeButton, Image, ImageWrapper, Spacer, UpArrow };
+export {
+  MainWrapper,
+  Content,
+  Wrapper,
+  Title,
+  SubTitle,
+  Copy,
+  Card,
+  CTAButton,
+  Testimonial,
+  SVGArrowRight,
+  HomeButton,
+  Image,
+  ImageWrapper,
+  Spacer,
+  UpArrow
+};

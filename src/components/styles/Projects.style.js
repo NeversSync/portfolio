@@ -4,7 +4,8 @@ import { H3 } from './Utilities.style';
 const Wrapper = styled.div`
   font-family: 'Raleway', sans-serif;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 600px));
+  /* grid-template-columns: repeat(auto-fill, minmax(600px, 600px)); */
+  grid-template-columns: 1fr;
   grid-template-rows: 350px 350px;
   justify-content: center;
   justify-items: center;
@@ -15,7 +16,8 @@ const Wrapper = styled.div`
 
 
   @media(min-width: 960px) {
-    margin: .5% 0;
+    grid-template-columns: 1fr 1fr;
+    margin: .5% 8vw;
   }
 `;
 
@@ -95,7 +97,6 @@ const SubHeader = styled.h3`
 
 const Img = styled.img`
   width: 100%;
-  /* height: 100%; */
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 `;
 
