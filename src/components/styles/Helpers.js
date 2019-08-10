@@ -25,7 +25,6 @@ const Wrapper = styled.div`
 `;
 
 const Copy = styled.p`
-  font-family: 'Rubik', sans-serif;
   font-size: 0.6em;
   line-height: 22px;
   letter-spacing: 1.5px;
@@ -66,7 +65,6 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h3`
-  font-family: 'rubik', sans-serif;
   font-size: 0.9em;
   letter-spacing: 4px;
   font-weight: 300;
