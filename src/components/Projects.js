@@ -31,13 +31,13 @@ class Projects extends Component {
     return (
       <div style={{ marginBottom: '40px' }}>
         <Title>Projects</Title>
-        <ProjectSection>ReactJS Projects</ProjectSection>
+        <ProjectSection>React.JS Projects</ProjectSection>
         <Wrapper>
           <Project
             ref={comp => { this.PascaleProject = comp; }} className='project-comp'>
             <a href="https://www.pascalevermont.com/" target="_blank" rel="noopener noreferrer">
               <Header>Pascale Vermont</Header>
-              <SubHeader>ReactJS, GatsbyJS,<br/>Mobile-first, Styled Components</SubHeader>
+              <SubHeader>React.JS, GatsbyJS,<br/>Mobile-first, Styled Components</SubHeader>
               <Img src={PascaleImg} alt=''></Img>
             </a>
           </Project>
@@ -46,7 +46,7 @@ class Projects extends Component {
             ref={comp => { this.TableauProject = comp; }} className='project-comp'>
             <a href="https://the-tableau-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Header>Tableau</Header>
-              <SubHeader>ReactJS/Redux, NodeJS, ExpressJS, AWS S3, MongoDB, Mongoose, Heroku, Mlab</SubHeader>
+              <SubHeader>React.JS/Redux, NodeJS, ExpressJS, AWS S3, MongoDB, Mongoose, Heroku, Mlab</SubHeader>
               <Img src={tableauImg} alt=''></Img>
             </a>
           </Project>
@@ -55,7 +55,7 @@ class Projects extends Component {
             ref={comp => { this.JoeMyGoodnessProject = comp; }} className='project-comp'>
             <a href="https://djjoemygoodness.com/" target="_blank" rel="noopener noreferrer">
               <Header>DJ Joe My Goodness</Header>
-              <SubHeader>ReactJS, GatsbyJS, <br/>Styled Components, Mobile-first</SubHeader>
+              <SubHeader>React.JS, GatsbyJS, <br/>Styled Components, Mobile-first</SubHeader>
               <Img src={joeImg} alt=''></Img>
             </a>
           </Project>

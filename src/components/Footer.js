@@ -29,7 +29,7 @@ function Footer() {
               </LabelWrapper></a></Button>
         </ButtonWrapper>
       </CallToAction>
-      <Copyright>This site built with ReactJS <br />
+      <Copyright>This site built with React.JS <br />
         {/* &copy; Nicky Evers Design */}
       </Copyright>
       <UpArrow/>
