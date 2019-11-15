@@ -61,8 +61,8 @@ class About extends Component {
     return (
       <Wrapper id='about'>
         <HeaderWrapper ref={(comp) => { this.Header = comp; }} className="header-title">
-          <Header >Hi, I'm Nicky.</Header>
-          <SubHeader>I'm a design driven Web Developer and Designer and I'm here to help.</SubHeader>
+          <Header >Hi, I'm Nicky</Header>
+          <SubHeader>I'm a design driven Web Developer and Designer and I'm here to help</SubHeader>
         </HeaderWrapper>
         <Content ref={(comp) => { this.Content = comp; }} className="content-comp">
           <ImgWrapper>

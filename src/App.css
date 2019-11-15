@@ -95,3 +95,32 @@ a {
 .up-arrow {
   transform: rotate(-90deg) scale(1.4);
 }
+/*
+const fade = keyframes`
+0% {
+fill:#61DAFB;
+}
+50% {
+ fill:#999;
+}
+100%{
+  fill:#61DAFB;
+}
+`; */
+
+@keyframes fade {
+0% {
+  transform: scale(0);
+  opacity: 1;
+  transform-origin: center;
+}
+100% {
+  transform: scale(4.5);
+  opacity: 0;
+  transform-origin: center;
+}
+};
+
+.cloud-path {
+  animation: fade infinite 5s linear;
+}

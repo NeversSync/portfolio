@@ -6,7 +6,7 @@ font-weight: 700;
 color: hsla(187,5%,33%,1);
 
 @media(min-width:768px) {
-  font-size: 1.15em;
+  font-size: 1.5em;
 }
 `;
 
