@@ -4,7 +4,6 @@ import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWra
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
-// const profileImg = 'http://res.cloudinary.com/nicky-cloudinary/image/upload/v1519772068/Portfolio/profile-img.jpg';
 const profileImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,w_1221/v1526599568/6-8.jpg';
 
 
