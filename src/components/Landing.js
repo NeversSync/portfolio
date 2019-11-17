@@ -10,6 +10,7 @@ import {
   Title,
   ArrowWrapper
 } from './styles/Landing.style';
+import AnimatedCard from './AnimatedCard';
 
 const windowGlobal = typeof window !== 'undefined' && window;
 class Landing extends Component {
@@ -82,26 +83,27 @@ class Landing extends Component {
             }}
             key={'background'}
           >
-            <Header>
-              <ReactCSSTransitionGroup
-                transitionName='fadedown-in'
-                transitionAppear={true}
-                transitionAppearTimeout={1500}
-                transitionEnter={false}
-                transitionLeave={false}
-              >
-                <SubTitle key={'subtitle'}>Web Developer | Designer</SubTitle>
-              </ReactCSSTransitionGroup>
-              <ReactCSSTransitionGroup
-                transitionName='fadeup-in'
-                transitionAppear={true}
-                transitionAppearTimeout={1500}
-                transitionEnter={false}
-                transitionLeave={false}
-              >
-                <Title key={'title'}>Nicky Evers</Title>
-              </ReactCSSTransitionGroup>
-            </Header>
+            <AnimatedCard/>
+              {/* <Header> */}
+                {/* <ReactCSSTransitionGroup
+                  transitionName='fadedown-in'
+                  transitionAppear={true}
+                  transitionAppearTimeout={1500}
+                  transitionEnter={false}
+                  transitionLeave={false}
+                >
+                  <SubTitle key={'subtitle'}>Web Developer | Designer</SubTitle>
+                </ReactCSSTransitionGroup>
+                <ReactCSSTransitionGroup
+                  transitionName='fadeup-in'
+                  transitionAppear={true}
+                  transitionAppearTimeout={1500}
+                  transitionEnter={false}
+                  transitionLeave={false}
+                >
+                  <Title key={'title'}>Nicky Evers</Title>
+                </ReactCSSTransitionGroup> */}
+              {/* </Header> */}
             <ArrowWrapper className='about-arrow' href='#about'>
               <ArrowIcon
                 onMouseEnter={this.hoverToggle}

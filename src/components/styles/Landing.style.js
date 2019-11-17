@@ -13,7 +13,8 @@ background-position: center center;
 `;
 
 const Header = styled.div`
-height: 87vh;
+/* height: 87vh; */
+/* height: 87vh; */
 display: flex;
 justify-content: center;
 align-items: center;
