@@ -28,7 +28,7 @@ const Title = styled.div`
   height: 140px;
   font-size: 2.2em;
   color: white;
-  background-color: hsla(187, 65%, 40%, .75);
+  background: linear-gradient(10deg, hsla(187, 65%, 40%, .9), hsla(170, 74%, 54%, .9));
 
   @media(min-width:768px) {
     font-size: 2em;

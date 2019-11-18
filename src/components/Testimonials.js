@@ -30,7 +30,6 @@ const Testimonials = () => {
           scrollableAncestor={windowGlobal}
           bottomOffset='50%'
           onEnter={() => {
-            console.log('here');
             toggle(true);
           }}
         />
