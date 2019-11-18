@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { animated } from 'react-spring';
 const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_1412/v1519770562/Portfolio/aerial-forest-hero-img.jpg';
 
 const Wrapper = styled.div`
@@ -24,7 +25,7 @@ text-shadow: 3px 3px 14px black;
 font-size: 6.5vw;
 `;
 
-const Title = styled.h1`
+const Title = styled(animated.h1)`
 margin: 30px;
 font-size: 1.8em;
 font-weight: 400;
@@ -34,7 +35,7 @@ font-weight: 400;
   }
 `;
 
-const SubTitle = styled.h2`
+const SubTitle = styled(animated.h2)`
   font-size: .9em;
   font-weight: 300;
 
