@@ -6,7 +6,7 @@ font-weight: 700;
 color: hsla(187,5%,33%,1);
 
 @media(min-width:768px) {
-  font-size: 1.15em;
+  font-size: 1.5em;
 }
 `;
 
@@ -24,9 +24,10 @@ const P = styled.p`
   font-size: 1.1em;
   font-weight: 400;
   color: hsla(187,5%,33%,1);
+  line-height: 28px;
 
   @media(min-width:768px) {
-    font-size: .85em;
+    font-size: .9em;
   }
 `;
 

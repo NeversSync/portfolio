@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { animated } from 'react-spring';
 const heroImgUrl = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_1412/v1519770562/Portfolio/aerial-forest-hero-img.jpg';
 
 const Wrapper = styled.div`
@@ -13,27 +14,28 @@ background-position: center center;
 `;
 
 const Header = styled.div`
-height: 87vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-font-family: 'Raleway', sans-serif;
-text-shadow: 3px 3px 14px black;
-font-size: 6.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 3px 3px 14px black;
+  font-size: 6.5vw;
+  text-align: center;
 `;
 
-const Title = styled.h1`
-margin: 30px;
-font-size: 1.8em;
-font-weight: 400;
+const Title = styled(animated.h1)`
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: 400;
 
   @media(min-width: 768px) {
-    font-size: .7em;
+    margin: .5vw;
+    font-size: .6em;
   }
 `;
 
-const SubTitle = styled.h2`
+const SubTitle = styled(animated.h2)`
   font-size: .9em;
   font-weight: 300;
 
@@ -63,15 +65,5 @@ const ArrowWrapper = styled.a`
   animation-delay: 400ms;
   animation-iteration-count: 2;
 `;
-// const ArrowWrapper = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   max-height: 100px;
-//   animation: ${arrowBounce} 2s;
-//   animation-delay: 400ms;
-//   animation-iteration-count: 2;
-// `;
-
 
 export { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper };

@@ -95,3 +95,104 @@ a {
 .up-arrow {
   transform: rotate(-90deg) scale(1.4);
 }
+/*
+const fade = keyframes`
+0% {
+fill:#61DAFB;
+}
+50% {
+ fill:#999;
+}
+100%{
+  fill:#61DAFB;
+}
+`; */
+
+@keyframes fade {
+0% {
+  transform: scale(0);
+  opacity: 1;
+  transform-origin: center;
+}
+100% {
+  transform: scale(4.5);
+  opacity: 0;
+  transform-origin: center;
+}
+};
+
+.cloud-path {
+  animation: fade infinite 5s linear;
+}
+
+/* QUOTE */
+@keyframes svg-gradient {
+  0% {
+    stop-color: rgba(0, 188, 155, 0.4);
+  }
+  20% {
+    stop-color: rgba(0, 188, 155, 0.6);
+  }
+  40% {
+    stop-color: rgba(94, 174, 253,.4);
+  }
+  60% {
+    stop-color: rgba(94, 174, 253,.6);
+  }
+  80% {
+    stop-color: rgba(0, 188, 155, 0.5);
+  }
+  100% {
+    stop-color: rgba(0, 188, 155, 0.4);
+  }
+}
+
+@keyframes svg-grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#stop1 {
+  animation: svg-gradient 10s linear infinite;
+}
+#stop2 {
+  animation: svg-gradient 10s linear infinite;
+}
+#stop3 {
+  animation: svg-gradient 10s linear infinite;
+}
+#stop4 {
+  animation: svg-gradient 10s linear infinite;
+}
+
+.svg-container {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 90vw;
+  margin-top: -50vh;
+}
+
+@media(min-width: 768px) {
+  .svg-container {
+    grid-row: 1 / -1;
+    width: 60vw;
+    margin-top: -10vh;
+  }
+}
+
+
+.svg {
+  animation: svg-grow 30s linear infinite;
+  width: 100%;
+  height: auto;
+  fill: rgba(0,0,0,0);
+  overflow: visible;
+}

@@ -5,11 +5,9 @@ import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
 import {
   Wrapper,
   Background,
-  Header,
-  SubTitle,
-  Title,
   ArrowWrapper
 } from './styles/Landing.style';
+import AnimatedHeaderCard from './AnimatedHeaderCard';
 
 const windowGlobal = typeof window !== 'undefined' && window;
 class Landing extends Component {
@@ -19,7 +17,8 @@ class Landing extends Component {
       color: 'hsla(187, 55%, 50%, 1)',
       size: '100px',
       width: props.windowSize,
-      isMobile: true
+      isMobile: true,
+      isMounted: false
     };
 
     this.hoverToggle = this.hoverToggle.bind(this);
@@ -33,6 +32,7 @@ class Landing extends Component {
   componentDidMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
     const controller = new ScrollMagic.Controller();
+    this.setState({ isMounted: true });
 
     new ScrollMagic.Scene({
       triggerElement: this.Wrapper,
@@ -82,26 +82,7 @@ class Landing extends Component {
             }}
             key={'background'}
           >
-            <Header>
-              <ReactCSSTransitionGroup
-                transitionName='fadedown-in'
-                transitionAppear={true}
-                transitionAppearTimeout={1500}
-                transitionEnter={false}
-                transitionLeave={false}
-              >
-                <SubTitle key={'subtitle'}>Web Developer | Designer</SubTitle>
-              </ReactCSSTransitionGroup>
-              <ReactCSSTransitionGroup
-                transitionName='fadeup-in'
-                transitionAppear={true}
-                transitionAppearTimeout={1500}
-                transitionEnter={false}
-                transitionLeave={false}
-              >
-                <Title key={'title'}>Nicky Evers</Title>
-              </ReactCSSTransitionGroup>
-            </Header>
+            <AnimatedHeaderCard isMounted={this.state.isMounted}/>
             <ArrowWrapper className='about-arrow' href='#about'>
               <ArrowIcon
                 onMouseEnter={this.hoverToggle}

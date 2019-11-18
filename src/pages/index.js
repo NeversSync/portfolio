@@ -4,6 +4,7 @@ import Landing from '../components/Landing';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import Testimonials from '../components/Testimonials';
 import { MainWrapper, Content } from '../components/styles/Helpers';
 
 if (typeof window !== 'undefined') {
@@ -17,6 +18,7 @@ const IndexPage = () => (
       <Landing />
       <Content>
         <About />
+        <Testimonials />
         <Projects />
         <Contact />
       </Content>
