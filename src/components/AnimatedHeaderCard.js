@@ -5,16 +5,16 @@ import { Header, SubTitle, Title } from './styles/Landing.style';
 
 const AnimatedCardContainer = styled(animated.div)`
   display: grid;
-  height: 80vh;
+  height: 78vh;
   justify-content: center;
   align-items: center;
 
   @media(min-width: 768px) {
-    height: 84vh;
+    height: 82vh;
   }
 
   @media(min-width: 900px) {
-    height: 87vh;
+    height: 86vh;
   }
 `;
 
