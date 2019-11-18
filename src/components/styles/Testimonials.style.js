@@ -15,8 +15,12 @@ const TestimonialsWrapper = styled(animated.div)`
   padding-bottom: 7vh;
 
   @media (min-width: 768px) {
-    padding: 0;
+    padding: 3vh;
     grid-template-columns: 1fr auto auto 1fr;
+  }
+
+  @media (min-width: 900px) {
+    padding-top: 0;
   }
 `;
 
@@ -26,7 +30,7 @@ const TestimonialsTitle = styled(H2)`
 
 const TestimonialsCopy = styled(P)`
   font-style: italic;
-  font-size: .8em;
+  font-size: .9em;
 
   @media (min-width: 768px) {
     font-size: 1em;
@@ -64,9 +68,17 @@ const TestimonialsCard = styled(animated.div)`
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
 
+
   @media (min-width: 768px) {
+    padding: 1.5em;
+    width: 33vw;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: 900px) {
     padding: 2em;
-    width: 45ch;
+    width: 35vw;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }

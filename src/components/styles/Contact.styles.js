@@ -59,6 +59,12 @@ const ContactCard = styled(Card)`
   /* align-items: center; */
   height: 550px;
 
+  @media (min-width: 900px) {
+    width: 80%;
+    /* grid-column: 2 / 6;
+    grid-row: 3 / 4; */
+  }
+
   @media (min-width: 1200px) {
     padding: 2em 5px;
     height: 330px;
@@ -184,7 +190,7 @@ const RightTextArea = styled.textarea`
   border-radius: 8px;
   font-size: 16px;
   padding: 10px;
-  width: 100%;
+  width: 95%;
   height: 100%;
   -webkit-appearance: none;
 

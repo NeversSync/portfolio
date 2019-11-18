@@ -5,9 +5,17 @@ import { Header, SubTitle, Title } from './styles/Landing.style';
 
 const AnimatedCardContainer = styled(animated.div)`
   display: grid;
-  height: 87vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
+
+  @media(min-width: 768px) {
+    height: 84vh;
+  }
+
+  @media(min-width: 900px) {
+    height: 87vh;
+  }
 `;
 
 const AnimatedCardWrapper = styled(animated.div)`
@@ -15,7 +23,6 @@ const AnimatedCardWrapper = styled(animated.div)`
   padding: 1.5em;
   align-content: center;
   border-radius: 10px;
-  /* margin: 1em; */
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.5s;
   will-change: transform;

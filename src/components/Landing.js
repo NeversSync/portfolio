@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import * as ScrollMagic from 'scrollmagic';
 import ArrowIcon from 'react-material-icons/icons/hardware/keyboard-arrow-down';
-import {
-  Wrapper,
-  Background,
-  ArrowWrapper
-} from './styles/Landing.style';
+import { Wrapper, Background, ArrowWrapper } from './styles/Landing.style';
 import AnimatedHeaderCard from './AnimatedHeaderCard';
 
 const windowGlobal = typeof window !== 'undefined' && window;
@@ -31,16 +25,7 @@ class Landing extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
-    const controller = new ScrollMagic.Controller();
     this.setState({ isMounted: true });
-
-    new ScrollMagic.Scene({
-      triggerElement: this.Wrapper,
-      triggerHook: 0
-      // duration: this.state.width <= 768 ? '0%' : '0%'
-    })
-      .setPin(this.Background, { pushFollowers: false })
-      .addTo(controller);
   }
 
   componentWillUnmount() {
@@ -63,39 +48,21 @@ class Landing extends Component {
 
   render() {
     return (
-      <Wrapper
-        ref={comp => {
-          this.Wrapper = comp;
-        }}
-      >
-        <ReactCSSTransitionGroup
-          transitionName='fadein'
-          transitionAppear={true}
-          transitionAppearTimeout={1200}
-          transitionEnter={false}
-          transitionLeave={false}
-        >
-          <Background
-            className='background'
-            ref={comp => {
-              this.Background = comp;
-            }}
-            key={'background'}
-          >
-            <AnimatedHeaderCard isMounted={this.state.isMounted}/>
-            <ArrowWrapper className='about-arrow' href='#about'>
-              <ArrowIcon
-                onMouseEnter={this.hoverToggle}
-                onMouseLeave={this.hoverToggle}
-                style={{
-                  color: this.state.color,
-                  width: this.state.size,
-                  height: this.state.size
-                }}
-              />
-            </ArrowWrapper>
-          </Background>
-        </ReactCSSTransitionGroup>
+      <Wrapper>
+        <Background>
+          <AnimatedHeaderCard isMounted={this.state.isMounted} />
+          <ArrowWrapper className='about-arrow' href='#about'>
+            <ArrowIcon
+              onMouseEnter={this.hoverToggle}
+              onMouseLeave={this.hoverToggle}
+              style={{
+                color: this.state.color,
+                width: this.state.size,
+                height: this.state.size
+              }}
+            />
+          </ArrowWrapper>
+        </Background>
       </Wrapper>
     );
   }
