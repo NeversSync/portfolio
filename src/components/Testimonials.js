@@ -27,7 +27,7 @@ const Testimonials = () => {
   return (
     <>
         <Waypoint
-          scrollableAncestor={window}
+          scrollableAncestor={windowGlobal}
           bottomOffset='50%'
           onEnter={() => {
             console.log('here');
