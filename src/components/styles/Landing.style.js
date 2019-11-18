@@ -65,15 +65,5 @@ const ArrowWrapper = styled.a`
   animation-delay: 400ms;
   animation-iteration-count: 2;
 `;
-// const ArrowWrapper = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   max-height: 100px;
-//   animation: ${arrowBounce} 2s;
-//   animation-delay: 400ms;
-//   animation-iteration-count: 2;
-// `;
-
 
 export { Wrapper, Background, Header, SubTitle, Title, ArrowWrapper };

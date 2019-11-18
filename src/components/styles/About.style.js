@@ -11,15 +11,18 @@ const Wrapper = styled.div`
   padding: 10% 6%;
 
   @media(min-width: 768px) {
-    padding: 3% 6% 4% 6%;
+    padding: 3% 6% 0 6%;
     height: 80vh;
   }
 `;
 
 const HeaderWrapper = styled.div`
-  margin-bottom: 30px;
+  display: grid;
+  max-width: 85vw;
+  margin: 0 auto 30px auto;
 
   @media(min-width: 768px) {
+    max-width: 25vw;
     margin-bottom: 54px;
   }
 `;
@@ -60,13 +63,13 @@ const ImgWrapper = styled(animated.div)`
 const AnimatedImage = styled(animated.img)`
   width: 100%;
   max-width: 350px;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
   border-radius: 5px;
 
   :hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
 `;
 

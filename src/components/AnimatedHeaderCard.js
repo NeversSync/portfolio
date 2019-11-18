@@ -16,17 +16,17 @@ const AnimatedCardWrapper = styled(animated.div)`
   align-content: center;
   border-radius: 10px;
   /* margin: 1em; */
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 20px solid rgba(0, 0, 0, 0.15);
+  /* border: 20px solid rgba(0, 0, 0, 0.15); */
 
   :hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.9);
   }
 
   @media(min-width: 768px) {
-    padding: 2em;
+    padding: 2.5em;
   }
 `;
 

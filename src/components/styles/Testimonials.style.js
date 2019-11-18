@@ -1,68 +1,22 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
-import { H2 } from './Utilities.style';
-import { Card } from './Helpers';
+import { H2, P } from './Utilities.style';
 
-// const fade = keyframes`
-// 0% {
-// fill:#61DAFB;
-// }
-// 50% {
-//  fill:#999;
-// }
-// 100%{
-//   fill:#61DAFB;
-// }
-// `;
 
-// const pulse = keyframes`
-// 0% {
-//   transform: scale(0);
-//   opacity: 1;
-//   transform-origin: center;
-// }
-// 100% {
-//   transform: scale(4.5);
-//   opacity: 0;
-//   transform-origin: center;
-// }
-// `;
-
-// const TestimonialsWrapper = styled(animated.div)`
-// display: grid;
-// grid-template-columns: 1fr;
-// justify-content: center;
-// justify-items: center;
-// /* grid-gap: 1em; */
-// background-color: black;
-// color: hsla(187, 5%, 33%, 1);
-// align-items: center;
-// padding: 10vh 0;
-// /* margin: 2% 0%; */
-// /* grid-template-rows: 350px 350px; */
-
-// @media(min-width: 960px) {
-// /* grid-template-rows: 50vh; */
-//   grid-template-columns: 1fr 1fr;
-//   /* margin: .5% 0px 0px 0px; */
-// }
-// `;
 
 const TestimonialsWrapper = styled(animated.div)`
   display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.05);
+  justify-items: center;
   color: hsla(187, 5%, 33%, 1);
   align-items: center;
-  padding: 10vh 0;
-  /* justify-items: center; */
-  /* margin: 2% 0%; */
-  /* grid-template-rows: 350px 350px; */
+  padding-bottom: 7vh;
 
-  @media (min-width: 960px) {
-    /* grid-template-rows: 50vh; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* margin: .5% 0px 0px 0px; */
+  @media (min-width: 768px) {
+    padding: 0;
+    grid-template-columns: 1fr auto auto 1fr;
   }
 `;
 
@@ -70,46 +24,63 @@ const TestimonialsTitle = styled(H2)`
   justify-self: center;
 `;
 
+const TestimonialsCopy = styled(P)`
+  font-style: italic;
+  font-size: .8em;
+
+  @media (min-width: 768px) {
+    font-size: 1em;
+  }
+`;
+
+const TestimonialsLink = styled.a`
+  display: grid;
+  width: fit-content;
+  margin: 0 auto;
+  color: hsla(187, 55%, 50%, 1);
+  transition: 300ms all;
+
+  :hover {
+    color: hsla(187, 70%, 35%, 1);
+    transform: scale(1.1);
+  }
+`;
+
 const TestimonialsCard = styled(animated.div)`
   display: grid;
-  width: 45ch;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  width: 70vw;
   padding: 1em;
-  background: white;
+  background: rgba(255,255,255,.85);
   align-content: center;
   border-radius: 5px;
   margin: 1em;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid white;
 
   :hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
+
+  @media (min-width: 768px) {
+    padding: 2em;
+    width: 45ch;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
 `;
 
-/* const TestimonialsCard = styled(Card)`
-  display: grid;
-  background-color: white;
-  grid-column: 1 / -1;
-  justify-content: center;
-  align-self: center;
-  min-height: 20vh;
-  margin: .5em 0;
-  /* padding: 2em 5px 0px 5px; */
-/* width: 85%; */
-/* grid-row: 3 / 4; */
-/* height: 550px; */
+const TestimonialsCardTwo = styled(TestimonialsCard)`
+grid-column: 1 / -1;
+grid-row: 3 / 4;
 
-// @media (min-width: 1200px) {
-//   padding: 2em;
-//   width: 50vw;
-/* grid-column: 2 / 6;
-    grid-row: 3 / 4; */
-/* padding: 2em 5px; */
-/* height: 330px; */
-/* width: 80%; */
-//  }
-// `;
+@media (min-width: 768px) {
+  grid-column: 3 / 4;
+  }
+`;
 
-export { TestimonialsWrapper, TestimonialsCard, TestimonialsTitle };
+
+export { TestimonialsWrapper, TestimonialsCard, TestimonialsCardTwo, TestimonialsTitle, TestimonialsCopy, TestimonialsLink };
