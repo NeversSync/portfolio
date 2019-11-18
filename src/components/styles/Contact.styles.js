@@ -56,17 +56,15 @@ const ContactCard = styled(Card)`
   width: 85%;
   grid-row: 3 / 4;
   justify-self: center;
-  /* align-items: center; */
   height: 550px;
 
   @media (min-width: 900px) {
     width: 80%;
-    /* grid-column: 2 / 6;
-    grid-row: 3 / 4; */
+    height: auto;
+    padding: 2em;
   }
 
   @media (min-width: 1200px) {
-    padding: 2em 5px;
     height: 330px;
     display: grid;
     padding: 2em;
@@ -74,7 +72,6 @@ const ContactCard = styled(Card)`
     grid-column: 2 / 6;
     grid-row: 3 / 4;
     justify-content: center;
-    /* width: 80%; */
   }
 `;
 
@@ -90,8 +87,6 @@ const ContactForm = styled.form`
     grid-template-rows: 250px 0px auto;
     width: 600px;
     text-align: center;
-    /* height: 300px; */
-    /* grid-gap: 30px; */
   }
 `;
 

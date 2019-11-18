@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
 font-family: 'Raleway', sans-serif;
-padding-top: 5%;
+padding-top: 4vh;
 display: grid;
 grid-row: 4 / 5;
 grid-column: 1 / -1;
 grid-gap: 1em;
 
 @media (min-width: 1200px) {
-  grid-gap: 3em;
+  grid-gap: 1.5em;
   }
 `;
 
@@ -97,11 +97,9 @@ const Copyright = styled(Copy)`
   text-align: center;
   font-size: .8em;
   color: hsla(187, 5%, 33%, 1);
-  /* margin: 1em 0 0 0; */
 
   @media(min-width:768px) {
-    /* margin: 70px 0 0 0; */
-    font-size: .9em;
+    font-size: .8em;
   }
 `;
 
