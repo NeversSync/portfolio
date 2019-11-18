@@ -8,19 +8,14 @@ const AnimatedCardContainer = styled(animated.div)`
   height: 87vh;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: 960px) {
-    /* grid-template-rows: 50vh; */
-    /* grid-template-columns: 1fr 1fr; */
-  }
 `;
 
 const AnimatedCardWrapper = styled(animated.div)`
   display: grid;
-  padding: 1em;
+  padding: 1.5em;
   align-content: center;
   border-radius: 10px;
-  margin: 1em;
+  /* margin: 1em; */
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.5s;
   will-change: transform;
@@ -28,6 +23,10 @@ const AnimatedCardWrapper = styled(animated.div)`
 
   :hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+
+  @media(min-width: 768px) {
+    padding: 2em;
   }
 `;
 
@@ -40,7 +39,8 @@ const calc = (x, y) => [
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-function AnimatedCard({ isMounted }) {
+
+function AnimatedHeaderCard({ isMounted }) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 }
@@ -88,4 +88,4 @@ function AnimatedCard({ isMounted }) {
   );
 }
 
-export default AnimatedCard;
+export default AnimatedHeaderCard;

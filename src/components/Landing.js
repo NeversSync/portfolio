@@ -7,7 +7,7 @@ import {
   Background,
   ArrowWrapper
 } from './styles/Landing.style';
-import AnimatedCard from './AnimatedCard';
+import AnimatedHeaderCard from './AnimatedHeaderCard';
 
 const windowGlobal = typeof window !== 'undefined' && window;
 class Landing extends Component {
@@ -82,7 +82,7 @@ class Landing extends Component {
             }}
             key={'background'}
           >
-            <AnimatedCard isMounted={this.state.isMounted}/>
+            <AnimatedHeaderCard isMounted={this.state.isMounted}/>
             <ArrowWrapper className='about-arrow' href='#about'>
               <ArrowIcon
                 onMouseEnter={this.hoverToggle}

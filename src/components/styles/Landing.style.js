@@ -14,24 +14,24 @@ background-position: center center;
 `;
 
 const Header = styled.div`
-/* height: 87vh; */
-/* height: 87vh; */
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-font-family: 'Raleway', sans-serif;
-text-shadow: 3px 3px 14px black;
-font-size: 6.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 3px 3px 14px black;
+  font-size: 6.5vw;
+  text-align: center;
 `;
 
 const Title = styled(animated.h1)`
-margin: 30px;
-font-size: 1.8em;
-font-weight: 400;
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: 400;
 
   @media(min-width: 768px) {
-    font-size: .7em;
+    margin: .5vw;
+    font-size: .6em;
   }
 `;
 

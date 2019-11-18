@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as ScrollMagic from 'scrollmagic';
 import { Wrapper, Content, HeaderWrapper, Header, SubHeader, ImgWrapper, CopyWrapper, SubCopy, Social, SocialIcon } from './styles/About.style';
+import AboutImage from './AboutImage';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
@@ -64,21 +65,12 @@ class About extends Component {
           <SubHeader>I'm a design driven Web Developer and Designer and I'm here to help</SubHeader>
         </HeaderWrapper>
         <Content ref={(comp) => { this.Content = comp; }} className="content-comp">
-          <ImgWrapper>
-            <img style={{
-              width: '100%',
-              boxShadow: '0 0 5px 0 rgba(0,0,0,.5)'
-            }} src={profileImg} alt='' />
-          </ImgWrapper>
+          <AboutImage/>
           <CopyWrapper>
             <SubCopy>My passion for learning combined with my love for elegance is a tremendous driving force in everything I do, from designing the perfect landing page, to writing code, to juggling or sourcing tea from Taiwan.
             </SubCopy>
             <SubCopy>I care about creating clean, effective websites and designs for people and businesses. I love the feeling of helping clients transform their ideas into a home on the web that is easy to use and inspiring. I'm currently working as a freelancer in beautiful Portland, Oregon.
             </SubCopy>
-            {/* <SubCopy>My passion for learning combined with my love for elegant problem solving is a tremendous driving force for me in everything I do, from writing DRY code, to juggling, to sourcing tea from Taiwan.
-            </SubCopy>
-            <SubCopy>I care about UI/UX and love to transform ideas into fully functional web applications. I'm currently available for full-time employment while working as a freelancer in Portland, Oregon.
-            </SubCopy> */}
             <Social>
               <SocialIcon href='mailto:livelyevers@gmail.com' target="_blank" rel="noopener noreferrer"><FaEnvelope
                 color={this.state.email} size={this.state.emailSize}
