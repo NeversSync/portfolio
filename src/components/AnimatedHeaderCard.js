@@ -14,6 +14,10 @@ const AnimatedCardContainer = styled(animated.div)`
   }
 
   @media(min-width: 900px) {
+    height: 83vh;
+  }
+
+  @media(min-width: 1200px) {
     height: 86vh;
   }
 `;
