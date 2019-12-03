@@ -12,7 +12,7 @@ class Landing extends Component {
       size: '100px',
       width: props.windowSize,
       isMobile: true,
-      isMounted: false
+      isMounted: false,
     };
 
     this.hoverToggle = this.hoverToggle.bind(this);
@@ -33,7 +33,7 @@ class Landing extends Component {
   }
 
   handleWindowSizeChange = () => {
-    this.setState({ width: windowGlobal.innerWidth + 'px' });
+    this.setState({ width: `${windowGlobal.innerWidth  }px` });
     if (this.state.width >= 768) this.setState({ isMobile: false });
   };
 
@@ -47,18 +47,19 @@ class Landing extends Component {
   };
 
   render() {
+    const test = 'tessstting';
     return (
       <Wrapper>
         <Background>
           <AnimatedHeaderCard isMounted={this.state.isMounted} />
-          <ArrowWrapper className='about-arrow' href='#about'>
+          <ArrowWrapper className="about-arrow" href="#about">
             <ArrowIcon
               onMouseEnter={this.hoverToggle}
               onMouseLeave={this.hoverToggle}
               style={{
                 color: this.state.color,
                 width: this.state.size,
-                height: this.state.size
+                height: this.state.size,
               }}
             />
           </ArrowWrapper>

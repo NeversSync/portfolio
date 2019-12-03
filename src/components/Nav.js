@@ -25,12 +25,20 @@ class Nav extends Component {
 
   render() {
     return (
-      <div id='outer-container'>
-        <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
-          <Link to ='/'><NavItem>Home</NavItem></Link>
-          <Link to ='/about'><NavItem>About</NavItem></Link>
-          <Link to ='/projects'><NavItem>Projects</NavItem></Link>
-          <Link to ='/contact'><NavItem>Contact</NavItem></Link>
+      <div id="outer-container">
+        <Menu pageWrapId="page-wrap" outerContainerId="outer-container">
+          <Link to="/">
+            <NavItem>Home</NavItem>
+          </Link>
+          <Link to="/about">
+            <NavItem>About</NavItem>
+          </Link>
+          <Link to="/projects">
+            <NavItem>Projects</NavItem>
+          </Link>
+          <Link to="/contact">
+            <NavItem>Contact</NavItem>
+          </Link>
         </Menu>
       </div>
     );
