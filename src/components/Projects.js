@@ -12,21 +12,21 @@ import {
 } from './styles/Projects.style';
 
 const tableauImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/dpr_auto,f_auto,q_auto:good/v1519772075/Portfolio/tableau-screen-shot.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--0rCQ98Y_--/f_auto,q_jpegmini/v1577230905/Portfolio/TABLEAU/TABLEAU-LANDING-SS.png';
 const joeImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--bTHG76If--/f_auto,q_jpegmini/v1562789893/Portfolio/joemygoodness.com-screenshot.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s---rc8HLjD--/f_auto,q_jpegmini/v1577230734/Portfolio/joemygoodness/JOEMYGOODNESS-LANDING-SS.png';
 const gongFuImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--OqiFZzIy--/dpr_auto,f_auto,q_jpegmini/v1519772080/Portfolio/gong-fu-tea-screenshot.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--I-UvsQEZ--/f_auto,q_jpegmini:2/v1577230665/Portfolio/gongfutea/GONGFUTEA-LANDING-SS.png';
 const EnterpriseImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--CmYI1J_B--/f_auto,q_jpegmini/v1549568086/Portfolio/enterprise-screenshot.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--kR__kW82--/f_auto,q_jpegmini/v1577230438/Portfolio/enterprise/ENTERPRISE-LANDING-SS.png';
 const LangmoreFeesImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--O-SfcUf7--/f_auto,q_jpegmini/v1562789892/Portfolio/langmorefees.com-screenshot.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--sj7ogtGK--/f_auto,q_jpegmini/v1577229365/Portfolio/langmore/LANGMORE-LANDING-SS.png';
 const ProplogicImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--XeJPGpiG--/f_auto,q_jpegmini/v1534317155/PROP-LOGIC/Screen_Shot_2018-08-15_at_12.08.46_AM.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--1wbXUvlp--/f_auto,q_jpegmini/v1577230853/Portfolio/prop-logic/PROPLOGIC-LANDING-SS.png';
 const PascaleImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1539649113/Portfolio/pascale-vermont-site-screenshot.png';
-const DoodleImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--6Yx3USEt--/f_auto,q_jpegmini/v1549568085/Portfolio/doodlegrip-screenshot.png';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--_lVPLDYj--/f_auto,q_jpegmini/v1577230813/Portfolio/pascale-vermont/PASCALEVERMONT-LANDING-SS.png';
+const CosmicFoxImg =
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--RSf1gLTe--/f_auto,q_jpegmini/v1577230321/Portfolio/cosmic-fox/COSMICFOX-LANDING-SS.png';
 
 class Projects extends Component {
   componentDidMount() {
@@ -38,8 +38,9 @@ class Projects extends Component {
       this.EnterpriseProject,
       this.LangmoreFeesProject,
       this.ProplogicProject,
-      this.DoodleProject,
+
       this.JoeMyGoodnessProject,
+      this.CosmicFoxProject,
     ];
     animatedProjectComponents.forEach(comp => {
       new ScrollMagic.Scene({
@@ -160,6 +161,23 @@ class Projects extends Component {
 
           <Project
             ref={comp => {
+              this.CosmicFoxProject = comp;
+            }}
+            className="project-comp"
+          >
+            <a
+              href="http://cosmicfox.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Header>Cosmic Fox</Header>
+              <SubHeader>Mobile-first, Wordpress</SubHeader>
+              <Img src={CosmicFoxImg} alt=""></Img>
+            </a>
+          </Project>
+
+          <Project
+            ref={comp => {
               this.LangmoreFeesProject = comp;
             }}
             className="project-comp"
@@ -175,22 +193,6 @@ class Projects extends Component {
             </a>
           </Project>
 
-          <Project
-            ref={comp => {
-              this.DoodleProject = comp;
-            }}
-            className="project-comp"
-          >
-            <a
-              href="https://www.doodlegrip.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Header>DoodleGrip®</Header>
-              <SubHeader>Mobile-first, Wordpress</SubHeader>
-              <Img src={DoodleImg} alt=""></Img>
-            </a>
-          </Project>
           <Project
             ref={comp => {
               this.ProplogicProject = comp;
