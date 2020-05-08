@@ -5,7 +5,7 @@ import { H2, P } from './Utilities.style';
 const TestimonialsWrapper = styled(animated.div)`
   display: grid;
   grid-template-columns: 1fr auto auto 1fr;
-  grid-template-rows: 5vh auto auto 5vh;
+  grid-template-rows: 5vh auto auto auto 5vh;
   justify-content: center;
   justify-items: center;
   color: hsla(187, 5%, 33%, 1);
@@ -19,7 +19,7 @@ const TestimonialsWrapper = styled(animated.div)`
 
   @media (min-width: 900px) {
     padding-top: 0;
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: 10vh auto auto 10vh;
   }
 `;
 
@@ -69,7 +69,7 @@ const TestimonialsCard = styled(animated.div)`
   }
 
   @media (min-width: 768px) {
-    margin: 12vh 1em;
+    margin: 12vh 1em 1em 1em;
     padding: 1.5em;
     width: 33vw;
     grid-column: 2 / 3;
@@ -77,17 +77,17 @@ const TestimonialsCard = styled(animated.div)`
   }
 
   @media (min-width: 900px) {
-    margin: 12vh 1em;
+    margin: 12vh 1em 1em 1em;
     padding: 2em;
     width: 35vw;
   }
 
   @media (min-width: 1200px) {
-    margin: 15vh 1em;
+    margin: 15vh 1em 1em 1em;
   }
 
   @media (min-width: 1400px) {
-    margin: 20vh 1em;
+    margin: 20vh 1em 1em 1em;
   }
 
 `;
@@ -102,4 +102,18 @@ grid-row: 3 / 4;
 `;
 
 
-export { TestimonialsWrapper, TestimonialsCard, TestimonialsCardTwo, TestimonialsTitle, TestimonialsCopy, TestimonialsLink };
+const TestimonialsCardThree = styled(TestimonialsCard)`
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  /* margin: 0px; */
+
+@media (min-width: 768px) {
+  margin: 1em ;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  }
+
+`;
+
+
+export { TestimonialsWrapper, TestimonialsCard, TestimonialsCardTwo, TestimonialsCardThree, TestimonialsTitle, TestimonialsCopy, TestimonialsLink };

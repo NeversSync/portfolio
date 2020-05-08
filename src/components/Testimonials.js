@@ -7,7 +7,8 @@ import {
   TestimonialsCopy,
   TestimonialsLink,
   TestimonialsCard,
-  TestimonialsCardTwo
+  TestimonialsCardTwo,
+  TestimonialsCardThree
 } from './styles/Testimonials.style';
 
 const windowGlobal = typeof window !== 'undefined' && window;
@@ -27,15 +28,14 @@ const Testimonials = () => {
     config: config.slow
   });
 
+  const slideInThree = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? 'translate3d(0, 0, 0)' : 'translate3d(0, 50%, 0)',
+    config: config.slow
+  });
+
   return (
     <>
-      <Waypoint
-        scrollableAncestor={windowGlobal}
-        bottomOffset='50%'
-        onEnter={() => {
-          toggle(true);
-        }}
-      />
       <TestimonialsWrapper>
         <div className='svg-container'>
           <svg
@@ -67,6 +67,13 @@ const Testimonials = () => {
             </g>
           </svg>
         </div>
+      <Waypoint
+        scrollableAncestor={windowGlobal}
+        bottomOffset='50%'
+        onEnter={() => {
+          toggle(true);
+        }}
+      >
         <TestimonialsCard style={slideInOne}>
           <TestimonialsCopy>
             I have turned to Nicky twice in the past for professional web
@@ -88,9 +95,41 @@ const Testimonials = () => {
             </TestimonialsLink>
           </TestimonialsCopy>
         </TestimonialsCard>
+        </Waypoint>
+        <Waypoint
+        scrollableAncestor={windowGlobal}
+        bottomOffset='50%'
+        onEnter={() => {
+          toggle(true);
+        }}
+      >
         <TestimonialsCardTwo style={slideInTwo}>
           <TestimonialsCopy>
-            Nicky Evers brought my website from the 20th century to the 21st
+            Nicky built me a website that is a beautiful reflection of who I am and what I offer to the world.<br/>
+            This was my first website, and creating it often felt like a ride, but Nicky supported and cheered me on every step of the way.
+            Nicky’s capacity for clear and timely communication, patience, and an unwavering positive attitude were beyond my expectations. I was very involved in the creative process and the experience felt very collaborative in nature.
+            Thank you for everything Nicky, I would recommend you to anyone!
+            <br />
+            <TestimonialsLink
+              href='https://www.jessvega.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              - Jessica Vega
+            </TestimonialsLink>
+          </TestimonialsCopy>
+        </TestimonialsCardTwo>
+        </Waypoint>
+        <Waypoint
+        scrollableAncestor={windowGlobal}
+        topOffset='100%'
+        onEnter={() => {
+          toggle(true);
+        }}
+      >
+        <TestimonialsCardThree style={slideInThree}>
+          <TestimonialsCopy>
+            Nicky brought my website from the 20th century to the 21st
             century! I have had many positive comments about its look and
             functionality. My topic was new to him but he learned what I needed
             to convey and took over! Many thanks to him.
@@ -103,7 +142,9 @@ const Testimonials = () => {
               - Susan Langmore
             </TestimonialsLink>
           </TestimonialsCopy>
-        </TestimonialsCardTwo>
+        </TestimonialsCardThree>
+        </Waypoint>
+
         <div className='svg-container svg-container-two'>
           <svg
             className='svg'
