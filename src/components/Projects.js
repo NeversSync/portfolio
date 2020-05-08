@@ -25,8 +25,9 @@ const ProplogicImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--1wbXUvlp--/f_auto,q_jpegmini/v1577230853/Portfolio/prop-logic/PROPLOGIC-LANDING-SS.png';
 const PascaleImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--_lVPLDYj--/f_auto,q_jpegmini/v1577230813/Portfolio/pascale-vermont/PASCALEVERMONT-LANDING-SS.png';
-const CosmicFoxImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--RSf1gLTe--/f_auto,q_jpegmini/v1577230321/Portfolio/cosmic-fox/COSMICFOX-LANDING-SS.png';
+const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_100/v1588966816/JESSVEGA/jessvega.com-landing.png';
+// const CosmicFoxImg =
+//   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--RSf1gLTe--/f_auto,q_jpegmini/v1577230321/Portfolio/cosmic-fox/COSMICFOX-LANDING-SS.png';
 
 class Projects extends Component {
   componentDidMount() {
@@ -38,9 +39,8 @@ class Projects extends Component {
       this.EnterpriseProject,
       this.LangmoreFeesProject,
       this.ProplogicProject,
-
       this.JoeMyGoodnessProject,
-      this.CosmicFoxProject,
+      this.JessVegaProject,
     ];
     animatedProjectComponents.forEach(comp => {
       new ScrollMagic.Scene({
@@ -144,35 +144,18 @@ class Projects extends Component {
         <Wrapper>
           <Project
             ref={comp => {
-              this.EnterpriseProject = comp;
+              this.JessVegaProject = comp;
             }}
             className="project-comp"
           >
             <a
-              href="https://enterpriseforyouth.org/"
+              href="https://www.jessvega.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Header>Enterprise For Youth</Header>
+              <Header>Jess Vega</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
-              <Img src={EnterpriseImg} alt=""></Img>
-            </a>
-          </Project>
-
-          <Project
-            ref={comp => {
-              this.CosmicFoxProject = comp;
-            }}
-            className="project-comp"
-          >
-            <a
-              href="http://cosmicfox.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Header>Cosmic Fox</Header>
-              <SubHeader>Mobile-first, Wordpress</SubHeader>
-              <Img src={CosmicFoxImg} alt=""></Img>
+              <Img src={JessVegaImg} alt=""></Img>
             </a>
           </Project>
 
@@ -190,6 +173,23 @@ class Projects extends Component {
               <Header>LangmoreFEES</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
               <Img src={LangmoreFeesImg} alt=""></Img>
+            </a>
+          </Project>
+
+          <Project
+            ref={comp => {
+              this.EnterpriseProject = comp;
+            }}
+            className="project-comp"
+          >
+            <a
+              href="https://enterpriseforyouth.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Header>Enterprise For Youth</Header>
+              <SubHeader>Mobile-first, Wordpress</SubHeader>
+              <Img src={EnterpriseImg} alt=""></Img>
             </a>
           </Project>
 

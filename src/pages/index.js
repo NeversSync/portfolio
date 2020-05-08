@@ -27,3 +27,12 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+// TODO: Add jess - Test adding a page for the project
+// TODO: Add jess testimonial. Make 3? or keep as 2?
+// TODO: Update resume
+// TODO: Remove landing page hover thing?
+// TODO: Replace tech stack info with user relatable stuff
+// TODO: Update animations for projects on scroll. faster
+
+
