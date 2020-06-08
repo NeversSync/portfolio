@@ -58,3 +58,7 @@ const Layout = ({ children }) => (
 );
 
 export default Layout;
+
+// TODO:
+// Add testimonial
+// check performance
