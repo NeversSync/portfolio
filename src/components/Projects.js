@@ -25,7 +25,7 @@ const ProplogicImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--1wbXUvlp--/f_auto,q_jpegmini/v1577230853/Portfolio/prop-logic/PROPLOGIC-LANDING-SS.png';
 const PascaleImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--_lVPLDYj--/f_auto,q_jpegmini/v1577230813/Portfolio/pascale-vermont/PASCALEVERMONT-LANDING-SS.png';
-const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_100/v1588966816/JESSVEGA/jessvega.com-landing.png';
+const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591594786/JESSVEGA/jessvega.com-landing.jpg';
 // const CosmicFoxImg =
 //   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--RSf1gLTe--/f_auto,q_jpegmini/v1577230321/Portfolio/cosmic-fox/COSMICFOX-LANDING-SS.png';
 
