@@ -37,10 +37,10 @@ const Layout = ({ children }) => (
             { name: 'og:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1563155765/Portfolio/nickyevers.com-screenshot.png' },
             { name: 'og:type', content: 'website' },
             { name: 'og:title', content: 'Nicky Evers Design' },
-            { name: 'og:url', content: 'https://nickyevers.com/' },
+            { name: 'og:url', content: 'https://nickyeversdesign.com/' },
             { name: 'og:description', content: 'Nicky Evers Design, Web Developer | Designer' },
             { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:url', content: 'https://nickyevers.com/' },
+            { name: 'twitter:url', content: 'https://nickyeversdesign.com/' },
             { name: 'twitter:title', content: 'Nicky Evers Design' },
             {
               name: 'twitter:description',
