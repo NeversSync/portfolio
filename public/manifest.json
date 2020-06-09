@@ -1,6 +1,6 @@
 {
-  "short_name": "Nicky Evers Portfolio",
-  "name": "Nicky Evers Portfolio",
+  "short_name": "Nicky Evers Design Portfolio",
+  "name": "Nicky Evers Design Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,7 +9,7 @@
     }
   ],
   "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "display": "minimal-ui",
+  "theme_color": "#40b8b9",
   "background_color": "#ffffff"
 }

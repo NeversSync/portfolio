@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Nicky Evers Design',
+    author: 'Nicky Evers Design',
+    description: 'Nicky Evers Design Web development and Design',
   },
   plugins: [
     {
@@ -11,6 +13,8 @@ module.exports = {
       }
     },
     { resolve: 'gatsby-plugin-styled-components' },
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline'
+
   ]
 };
