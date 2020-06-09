@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'gatsby-link';
 import {animated} from 'react-spring';
 
 const MainWrapper = styled.div`
@@ -180,6 +181,45 @@ const ArrowWrapper = styled.div`
 }
 `;
 
+
+const InternalButton = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  width: 200px;
+  height: 57px;
+  border-radius: 8px;
+  font-size: 1em;
+  color: white;
+  background: linear-gradient(hsla(187, 65%, 55%, 1), hsla(187, 65%, 40%, 1));
+  border: none;
+  border-bottom: 3px solid hsla(187, 65%, 30%, .7);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+  transition: .3s ease;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+  margin: 0 auto;
+
+  @media(min-width: 768px) {
+    font-size: .9em;
+
+    &:hover {
+      background: linear-gradient(hsla(187, 65%, 58%, 1), hsla(187, 65%, 40%, 1));
+      box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    }
+  }
+
+  &:active {
+    background: linear-gradient(hsla(187, 65%, 45%, 1), hsla(187, 65%, 35%, 1));
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    border-bottom: none;
+    box-shadow: none;
+  }
+`;
+
+
 // HELPER COMPONENTS
 
 const SVGArrowRight = () => (
@@ -292,5 +332,6 @@ export {
   Image,
   ImageWrapper,
   Spacer,
-  UpArrow
+  UpArrow,
+  InternalButton
 };

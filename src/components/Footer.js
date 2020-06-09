@@ -1,7 +1,7 @@
 import React from 'react';
 import resumeLink from '../../static/Nicky-Evers-Tech-Resume.pdf';
 import ResumeIcon from 'react-material-icons/icons/action/description';
-import { FooterWrapper, Copy, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction } from './styles/Footer.style';
+import { FooterWrapper, Copyright, ButtonWrapper, Button, LabelWrapper, CallToAction } from './styles/Footer.style';
 import { UpArrow } from '../components/styles/Helpers';
 
 function Footer() {
