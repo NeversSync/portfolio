@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import ScrollMagic from 'scrollmagic';
-
 import {
-  Wrapper,
   Header,
-  SubHeader,
-  Project,
-  Img,
-  Title,
-  ProjectSection,
+
+
+  Img, Project,
+
+
+  ProjectSection, SubHeader,
+
+
+  Title, Wrapper
 } from './styles/Projects.style';
+
 
 const tableauImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--0rCQ98Y_--/f_auto,q_jpegmini/v1577230905/Portfolio/TABLEAU/TABLEAU-LANDING-SS.png';
@@ -26,8 +29,7 @@ const ProplogicImg =
 const PascaleImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--_lVPLDYj--/f_auto,q_jpegmini/v1577230813/Portfolio/pascale-vermont/PASCALEVERMONT-LANDING-SS.png';
 const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591594786/JESSVEGA/jessvega.com-landing.jpg';
-// const CosmicFoxImg =
-//   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--RSf1gLTe--/f_auto,q_jpegmini/v1577230321/Portfolio/cosmic-fox/COSMICFOX-LANDING-SS.png';
+const IanessaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1597951358/Portfolio/ianessa-landing.jpg';
 
 class Projects extends Component {
   componentDidMount() {
@@ -41,6 +43,7 @@ class Projects extends Component {
       this.ProplogicProject,
       this.JoeMyGoodnessProject,
       this.JessVegaProject,
+      this.IanessaProject,
     ];
     animatedProjectComponents.forEach(comp => {
       new ScrollMagic.Scene({
@@ -142,6 +145,22 @@ class Projects extends Component {
         </Wrapper>
         <ProjectSection>Wordpress Sites</ProjectSection>
         <Wrapper>
+          <Project
+            ref={comp => {
+              this.IanessaProject = comp;
+            }}
+            className="project-comp"
+          >
+            <a
+              href="https://www.ianessahumbert.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Header>Ianessa Humbert</Header>
+              <SubHeader>Mobile-first, Wordpress</SubHeader>
+              <Img src={IanessaImg} alt=""></Img>
+            </a>
+          </Project>
           <Project
             ref={comp => {
               this.JessVegaProject = comp;
