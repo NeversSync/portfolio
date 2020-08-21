@@ -1,14 +1,12 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React, { useState } from 'react';
-import { useSpring, config } from 'react-spring';
+import { config, useSpring } from 'react-spring';
 import { Waypoint } from 'react-waypoint';
 import {
-  TestimonialsWrapper,
-  TestimonialsCopy,
-  TestimonialsLink,
   TestimonialsCard,
-  TestimonialsCardTwo,
-  TestimonialsCardThree
+  TestimonialsCardFour, TestimonialsCardThree, TestimonialsCardTwo,
+  TestimonialsCopy,
+  TestimonialsLink, TestimonialsWrapper
 } from './styles/Testimonials.style';
 
 const windowGlobal = typeof window !== 'undefined' && window;
@@ -29,6 +27,12 @@ const Testimonials = () => {
   });
 
   const slideInThree = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? 'translate3d(0, 0, 0)' : 'translate3d(0, 50%, 0)',
+    config: config.slow
+  });
+
+  const slideInFour = useSpring({
     opacity: on ? 1 : 0,
     transform: on ? 'translate3d(0, 0, 0)' : 'translate3d(0, 50%, 0)',
     config: config.slow
@@ -76,6 +80,27 @@ const Testimonials = () => {
       >
         <TestimonialsCard style={slideInOne}>
           <TestimonialsCopy>
+           Professional. Timely. Flexible. Great design sense! I'm so pleased to have worked with Nicky on multiple projects. He is the perfect person to help you manifest your ideas and while providing inspiration along the way with great suggestions you may have never considered. Because he believes in his own abilities as a web designer, he doesn't cut corners.  If you want a website that reflects you or your product, Nicky can get you there!
+            <br />
+            <TestimonialsLink
+              href='https://www.pascalevermont.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              - Ianessa Humbert
+            </TestimonialsLink>
+          </TestimonialsCopy>
+        </TestimonialsCard>
+        </Waypoint>
+      <Waypoint
+        scrollableAncestor={windowGlobal}
+        bottomOffset='50%'
+        onEnter={() => {
+          toggle(true);
+        }}
+      >
+        <TestimonialsCardTwo style={slideInTwo}>
+          <TestimonialsCopy>
             I have turned to Nicky twice in the past for professional web
             design, the first time to design my website and recently to revise
             it and make it even more relevant and appealing. Both times Nicky’s
@@ -94,7 +119,7 @@ const Testimonials = () => {
               - Pascale Vermont
             </TestimonialsLink>
           </TestimonialsCopy>
-        </TestimonialsCard>
+        </TestimonialsCardTwo>
         </Waypoint>
         <Waypoint
         scrollableAncestor={windowGlobal}
@@ -103,7 +128,7 @@ const Testimonials = () => {
           toggle(true);
         }}
       >
-        <TestimonialsCardTwo style={slideInTwo}>
+        <TestimonialsCardThree style={slideInThree}>
           <TestimonialsCopy>
             Nicky built me a website that is a beautiful reflection of who I am and what I offer to the world.<br/>
             This was my first website, and creating it often felt like a ride, but Nicky supported and cheered me on every step of the way.
@@ -118,7 +143,7 @@ const Testimonials = () => {
               - Jessica Vega
             </TestimonialsLink>
           </TestimonialsCopy>
-        </TestimonialsCardTwo>
+        </TestimonialsCardThree>
         </Waypoint>
         <Waypoint
         scrollableAncestor={windowGlobal}
@@ -127,7 +152,7 @@ const Testimonials = () => {
           toggle(true);
         }}
       >
-        <TestimonialsCardThree style={slideInThree}>
+        <TestimonialsCardFour style={slideInFour}>
           <TestimonialsCopy>
             Nicky brought my website from the 20th century to the 21st
             century! I have had many positive comments about its look and
@@ -142,7 +167,7 @@ const Testimonials = () => {
               - Susan Langmore
             </TestimonialsLink>
           </TestimonialsCopy>
-        </TestimonialsCardThree>
+        </TestimonialsCardFour>
         </Waypoint>
 
         <div className='svg-container svg-container-two'>

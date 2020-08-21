@@ -1,11 +1,11 @@
-import styled from 'styled-components';
 import { animated } from 'react-spring';
+import styled from 'styled-components';
 import { H2, P } from './Utilities.style';
 
 const TestimonialsWrapper = styled(animated.div)`
   display: grid;
   grid-template-columns: 1fr auto auto 1fr;
-  grid-template-rows: 5vh auto auto auto 5vh;
+  grid-template-rows: 5vh auto auto auto auto 5vh;
   justify-content: center;
   justify-items: center;
   color: hsla(187, 5%, 33%, 1);
@@ -109,11 +109,23 @@ const TestimonialsCardThree = styled(TestimonialsCard)`
 
 @media (min-width: 768px) {
   margin: 1em ;
-  grid-column: 1 / -1;
+  grid-column: 2 / 3;
   grid-row: 3 / 4;
   }
+`;
 
+const TestimonialsCardFour = styled(TestimonialsCard)`
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  /* margin: 0px; */
+
+@media (min-width: 768px) {
+  margin: 1em ;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  }
 `;
 
 
-export { TestimonialsWrapper, TestimonialsCard, TestimonialsCardTwo, TestimonialsCardThree, TestimonialsTitle, TestimonialsCopy, TestimonialsLink };
+
+export { TestimonialsWrapper, TestimonialsCard, TestimonialsCardTwo, TestimonialsCardThree, TestimonialsCardFour, TestimonialsTitle, TestimonialsCopy, TestimonialsLink };
