@@ -24,8 +24,8 @@ const EnterpriseImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--kR__kW82--/f_auto,q_jpegmini/v1577230438/Portfolio/enterprise/ENTERPRISE-LANDING-SS.png';
 const LangmoreFeesImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--sj7ogtGK--/f_auto,q_jpegmini/v1577229365/Portfolio/langmore/LANGMORE-LANDING-SS.png';
-const ProplogicImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--1wbXUvlp--/f_auto,q_jpegmini/v1577230853/Portfolio/prop-logic/PROPLOGIC-LANDING-SS.png';
+// const ProplogicImg =
+//   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--1wbXUvlp--/f_auto,q_jpegmini/v1577230853/Portfolio/prop-logic/PROPLOGIC-LANDING-SS.png';
 const PascaleImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--_lVPLDYj--/f_auto,q_jpegmini/v1577230813/Portfolio/pascale-vermont/PASCALEVERMONT-LANDING-SS.png';
 const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591594786/JESSVEGA/jessvega.com-landing.jpg';
@@ -40,7 +40,6 @@ class Projects extends Component {
       this.PascaleProject,
       this.EnterpriseProject,
       this.LangmoreFeesProject,
-      this.ProplogicProject,
       this.JoeMyGoodnessProject,
       this.JessVegaProject,
       this.IanessaProject,
@@ -209,23 +208,6 @@ class Projects extends Component {
               <Header>Enterprise For Youth</Header>
               <SubHeader>Mobile-first, Wordpress</SubHeader>
               <Img src={EnterpriseImg} alt=""></Img>
-            </a>
-          </Project>
-
-          <Project
-            ref={comp => {
-              this.ProplogicProject = comp;
-            }}
-            className="project-comp"
-          >
-            <a
-              href="https://proplogic.studio/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Header>Prop Logic Studio</Header>
-              <SubHeader>Mobile-first, Wordpress</SubHeader>
-              <Img src={ProplogicImg} alt=""></Img>
             </a>
           </Project>
         </Wrapper>
