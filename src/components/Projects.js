@@ -28,7 +28,7 @@ const LangmoreFeesImg =
 //   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--1wbXUvlp--/f_auto,q_jpegmini/v1577230853/Portfolio/prop-logic/PROPLOGIC-LANDING-SS.png';
 const PascaleImg =
   'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--_lVPLDYj--/f_auto,q_jpegmini/v1577230813/Portfolio/pascale-vermont/PASCALEVERMONT-LANDING-SS.png';
-const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591594786/JESSVEGA/jessvega.com-landing.jpg';
+const JessVegaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1598553589/Portfolio/jessvega-landing-screenshot.jpg';
 const IanessaImg = 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1597951358/Portfolio/ianessa-landing.jpg';
 
 class Projects extends Component {
