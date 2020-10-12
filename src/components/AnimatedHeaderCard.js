@@ -81,7 +81,7 @@ function AnimatedHeaderCard({ isMounted }) {
             ({ item, key, props }) =>
               item && (
                 <SubTitle key={key} style={props}>
-                  Web Developer | Designer
+                  Frontend Software Engineer
                 </SubTitle>
               )
           )}

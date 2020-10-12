@@ -16,6 +16,17 @@ a {
   color: black;
 }
 
+.link {
+  text-decoration: none;
+  color: hsla(187, 55%, 50%, 1);
+  transition: all 100ms ease-in-out;
+}
+
+.link:hover {
+  color: hsla(187, 70%, 35%, 1);
+  text-decoration: underline;
+}
+
 /* Animations */
 
 /* Landing comp anim*/

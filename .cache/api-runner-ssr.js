@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/PORTFOLIO/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-115875148-2","head":true},
     },{
-      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/PORTFOLIO/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/PORTFOLIO/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/nickyevers/Desktop/WEB/PERSONAL-PROJECTS/PORTFOLIO/portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
