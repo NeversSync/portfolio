@@ -88,7 +88,7 @@ class About extends Component {
         >
           <Header>Hi, I'm Nicky</Header>
           <SubHeader>
-            I'm a design driven Web Developer and Designer and I'm here to help
+            I'm a design driven Frontend Software Engineer and I'm here to help
           </SubHeader>
         </HeaderWrapper>
         <Content
@@ -109,7 +109,7 @@ class About extends Component {
               I care about creating clean, effective websites and designs for
               people and businesses. I love the feeling of helping clients
               transform their ideas into a home on the web that is easy to use
-              and inspiring. I'm currently working as a freelancer in beautiful
+              and inspiring. I'm currently working for <a href="https://audioeye.com/" target="_blank">AudioEye, Inc.</a> in beautiful
               Portland, Oregon.
             </SubCopy>
             <Social>
