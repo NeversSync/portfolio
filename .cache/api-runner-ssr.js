@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"trackingId":"UA-115875148-2","head":true},
+      plugin: require('/Users/nevers/CODE/nicoeversdesign/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-115875148-2","head":true,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0},
     },{
-      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/Users/nevers/CODE/nicoeversdesign/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
+    },{
+      plugin: require('/Users/nevers/CODE/nicoeversdesign/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('/Users/nevers/CODE/portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Users/nevers/CODE/nicoeversdesign/portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
