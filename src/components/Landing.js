@@ -47,7 +47,6 @@ class Landing extends Component {
   };
 
   render() {
-    const test = 'tessstting';
     return (
       <Wrapper>
         <Background>

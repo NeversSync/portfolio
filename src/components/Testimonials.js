@@ -80,7 +80,7 @@ const Testimonials = () => {
       >
         <TestimonialsCard style={slideInOne}>
           <TestimonialsCopy>
-           Professional. Timely. Flexible. Great design sense! I'm so pleased to have worked with Nicky on multiple projects. He is the perfect person to help you manifest your ideas and while providing inspiration along the way with great suggestions you may have never considered. Because he believes in his own abilities as a web designer, he doesn't cut corners.  If you want a website that reflects you or your product, Nicky can get you there!
+           Professional. Timely. Flexible. Great design sense! I'm so pleased to have worked with Nico on multiple projects. He is the perfect person to help you manifest your ideas and while providing inspiration along the way with great suggestions you may have never considered. Because he believes in his own abilities as a web designer, he doesn't cut corners.  If you want a website that reflects you or your product, Nico can get you there!
             <br />
             <TestimonialsLink
               href='https://www.pascalevermont.com/'
@@ -101,12 +101,12 @@ const Testimonials = () => {
       >
         <TestimonialsCardTwo style={slideInTwo}>
           <TestimonialsCopy>
-            I have turned to Nicky twice in the past for professional web
+            I have turned to Nico twice in the past for professional web
             design, the first time to design my website and recently to revise
-            it and make it even more relevant and appealing. Both times Nicky’s
+            it and make it even more relevant and appealing. Both times Nico’s
             technical expertise and creative eye resulted in a website that best
             represents my work and personality and is user-friendly. Independent
-            comments from my clients also expressed their appreciation. Nicky’s
+            comments from my clients also expressed their appreciation. Nico’s
             professional and kind manner made this a wonderful collaboration.
             His work came in on time and on budget and I can not recommend him
             enough.
@@ -130,10 +130,10 @@ const Testimonials = () => {
       >
         <TestimonialsCardThree style={slideInThree}>
           <TestimonialsCopy>
-            Nicky built me a website that is a beautiful reflection of who I am and what I offer to the world.<br/>
-            This was my first website, and creating it often felt like a ride, but Nicky supported and cheered me on every step of the way.
-            Nicky’s capacity for clear and timely communication, patience, and an unwavering positive attitude were beyond my expectations. I was very involved in the creative process and the experience felt very collaborative in nature.
-            Thank you for everything Nicky, I would recommend you to anyone!
+            Nico built me a website that is a beautiful reflection of who I am and what I offer to the world.<br/>
+            This was my first website, and creating it often felt like a ride, but Nico supported and cheered me on every step of the way.
+            Nico’s capacity for clear and timely communication, patience, and an unwavering positive attitude were beyond my expectations. I was very involved in the creative process and the experience felt very collaborative in nature.
+            Thank you for everything Nico, I would recommend you to anyone!
             <br />
             <TestimonialsLink
               href='https://www.jessvega.com/'
@@ -154,7 +154,7 @@ const Testimonials = () => {
       >
         <TestimonialsCardFour style={slideInFour}>
           <TestimonialsCopy>
-            Nicky brought my website from the 20th century to the 21st
+            Nico brought my website from the 20th century to the 21st
             century! I have had many positive comments about its look and
             functionality. My topic was new to him but he learned what I needed
             to convey and took over! Many thanks to him.

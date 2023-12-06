@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring } from 'react-spring';
 import { ImgWrapper, AnimatedImage } from './styles/About.style';
 const profileImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,w_1221/v1526599568/6-8.jpg';
+  'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1701888806/profile-photo-ultra-compressed.jpg';
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
