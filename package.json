@@ -60,7 +60,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "homepage": "https://nickyeversdesign.com/",
+  "homepage": "https://nicoeversdesign.com/",
   "browserslist": [
     ">0.2%",
     "not dead",

@@ -30,7 +30,6 @@ const AnimatedCardWrapper = styled(animated.div)`
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.5s;
   will-change: transform;
-  /* border: 20px solid rgba(0, 0, 0, 0.15); */
 
   :hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.9);
@@ -89,7 +88,7 @@ function AnimatedHeaderCard({ isMounted }) {
             ({ item, key, props }) =>
               item && (
                 <Title key={key} style={props}>
-                  Nicky Evers
+                  Nico Evers
                 </Title>
               )
           )}

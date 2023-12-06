@@ -14,9 +14,6 @@ import {
   SocialIcon,
 } from './styles/About.style';
 
-const profileImg =
-  'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,w_1221/v1526599568/6-8.jpg';
-
 class About extends Component {
   constructor(props) {
     super(props);
@@ -86,7 +83,7 @@ class About extends Component {
           }}
           className="header-title"
         >
-          <Header>Hi, I'm Nicky</Header>
+          <Header>Hi, I'm Nico</Header>
           <SubHeader>
             I'm a design driven Frontend Software Engineer and I'm here to help
           </SubHeader>
@@ -109,12 +106,12 @@ class About extends Component {
               I care about creating clean, effective websites and designs for
               people and businesses. I love the feeling of helping clients
               transform their ideas into a home on the web that is easy to use
-              and inspiring. I'm currently working for <a href="https://audioeye.com/" target="_blank" className="link">AudioEye, Inc.</a> in beautiful
+              and inspiring. I'm currently open to freelance projects and also completing my masters degree in Counseling while based in beautiful
               Portland, Oregon.
             </SubCopy>
             <Social>
               <SocialIcon
-                href="mailto:livelyevers@gmail.com"
+                href="mailto:nicoeversdesign@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >

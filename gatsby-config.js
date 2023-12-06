@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nicky Evers Design',
-    author: 'Nicky Evers Design',
-    description: 'Nicky Evers Design Web development and Design',
+    title: 'Nico Evers Design',
+    author: 'Nico Evers Design',
+    description: 'Nico Evers Design Web development and Design',
   },
   plugins: [
     {

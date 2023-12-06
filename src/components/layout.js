@@ -26,25 +26,25 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title='Nicky Evers Design'
+          title='Nico Evers Design'
           meta={[
-            { name: 'Nicky Evers Design', content: 'Nicky Evers Design' },
-            { name: 'keywords', content: 'Nicky Evers Design' },
+            { name: 'Nico Evers Design', content: 'Nico Evers Design' },
+            { name: 'keywords', content: 'Nico Evers Design' },
             {
               name: 'description',
-              content: 'Nicky Evers Design, Web Developer | Designer'
+              content: 'Nico Evers Design, Web Developer | Designer'
             },
             { name: 'og:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1563155765/Portfolio/nickyevers.com-screenshot.png' },
             { name: 'og:type', content: 'website' },
-            { name: 'og:title', content: 'Nicky Evers Design' },
-            { name: 'og:url', content: 'https://nickyeversdesign.com/' },
-            { name: 'og:description', content: 'Nicky Evers Design, Web Developer | Designer' },
+            { name: 'og:title', content: 'Nico Evers Design' },
+            { name: 'og:url', content: 'https://Nicoeversdesign.com/' },
+            { name: 'og:description', content: 'Nico Evers Design, Web Developer | Designer' },
             { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:url', content: 'https://nickyeversdesign.com/' },
-            { name: 'twitter:title', content: 'Nicky Evers Design' },
+            { name: 'twitter:url', content: 'https://Nicoeversdesign.com/' },
+            { name: 'twitter:title', content: 'Nico Evers Design' },
             {
               name: 'twitter:description',
-              content: 'Nicky Evers Design, Web Developer | Designer'
+              content: 'Nico Evers Design, Web Developer | Designer'
             },
             { name: 'twitter:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1563155765/Portfolio/nickyevers.com-screenshot.png' }
           ]}
@@ -58,7 +58,3 @@ const Layout = ({ children }) => (
 );
 
 export default Layout;
-
-// TODO:
-// Add testimonial
-// check performance
